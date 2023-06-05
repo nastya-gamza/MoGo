@@ -1,0 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: $font-main;
+  font-size: 18px;
+  color: $dark;
+  line-height: 1;
+}
+
+h1 {
+  font-family: $font-header;
+  font-weight: 700;
+  font-size: 144px;
+  color: $white;
+  line-height: 1.22;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.section-title {
+    font-family: $font-accent;
+    font-size: 30px;
+    color: $dark;
+}
+
+.about {
+  padding: 70px 0 105px;
+}
