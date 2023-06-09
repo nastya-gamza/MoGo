@@ -1,3 +1,7 @@
+.none {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,6 +36,47 @@ h1 {
     color: $dark;
 }
 
-.about {
+.about,
+.services,
+.devices,
+.what-we-do,
+.team {
   padding: 70px 0 105px;
+}
+
+.section-top {
+
+  text-align: center;
+
+  &__subtitle {
+    font-family: $font-accent;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    position: relative;
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 90px;
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      bottom: -45px;
+      transform: translateX(-50%);
+      content: "";
+      display: block;
+      clear: both;
+      width: 170px;
+      height: 4px;
+      background-color: #F38281;
+      
+    }
+  }
+
+  &__text {
+    line-height: 1.167;
+  }
 }

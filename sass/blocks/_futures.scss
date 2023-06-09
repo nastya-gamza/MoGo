@@ -1,0 +1,31 @@
+.futures {
+    
+    background-color: $main;
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+        justify-content: center;
+
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-right: 1px solid $white;
+        color: $white;
+        padding: 90px 0 60px;
+
+        &:first-child {
+            border-left: 1px solid $white;
+        }
+    }
+
+
+    &__item-number {
+        font-weight: 700;
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+}

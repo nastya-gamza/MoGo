@@ -18,6 +18,10 @@ a {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 ul,
 li {
   list-style-type: none;

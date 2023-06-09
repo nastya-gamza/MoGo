@@ -1,0 +1,43 @@
+.devices { 
+    position: relative;
+    height: 868px;
+    background-image: url('../img/devices/devices-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+
+    &__top {
+        margin-bottom: 110px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        clear: both;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        z-index: -1;
+    }
+
+    &__container {
+        position: relative;
+        max-width: 685px;
+        margin: 0 auto;
+    }
+
+    &__tablet {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__phone {
+        position: absolute;
+        width: 30%;
+        right: -7%;
+        top: 40%;
+    }
+}

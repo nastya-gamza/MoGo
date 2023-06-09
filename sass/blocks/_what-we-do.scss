@@ -1,0 +1,79 @@
+.what-we-do {
+    &__top {
+        margin-bottom: 80px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+}
+
+
+.accordion {
+    flex: 1 1 auto;
+}
+
+.accordion__checkbox, 
+.accordion-content { 
+    display: none; 
+}
+
+.tab {
+    border: 1px solid $lightgray; 
+    margin-bottom: 22px; 
+}
+
+.tab-title {
+    position: relative;
+    display: block; 
+    padding: 32px 32px 32px 100px; 
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase; 
+    cursor: pointer; 
+}
+
+.tab-title::before, 
+.tab-title::after {
+    content: ''; 
+    position: absolute;
+    display: block;
+    width: 42px;
+    height: 42px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.tab-title::before {
+    background-image: url(../../img/what-we-do/what-we-do-icon-1.svg);
+    left: 18px;
+}
+
+.tab-title::after {
+    background-image: url(../../img/icons/arrow.svg);
+    right: 20px;
+}
+
+.accordion-content {
+    padding: 10px 20px; 
+    overflow: auto;
+    height: 170px;
+}
+
+.tab :checked + .tab-title {
+    border-bottom: 1px solid $lightgray; 
+}
+
+.tab :checked + .tab-title::after {
+    right: 30px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.tab :checked ~ .accordion-content {
+    display: block; 
+}

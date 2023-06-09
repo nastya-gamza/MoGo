@@ -1,0 +1,72 @@
+.about {
+
+    &__top {
+        margin-bottom: 100px;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 30px;
+    }
+
+    &__item {
+        position: relative;
+        background-color: $main;
+    }
+
+    &__img {
+        position: relative;
+        z-index: 0;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: 100%;
+        }
+
+        &:hover {
+
+            transform: translate(-5%, -5%);
+
+            &::before {
+                content: "Super team";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                z-index: 100;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 13%;
+                background-image: url('../../img/icons/about-icon.svg');
+                background-size: 15%;
+                background-repeat: no-repeat;
+                background-position: 50% 30%;
+                font-size: 24px;
+                font-weight: 500;
+                color: $white;
+                text-transform: uppercase;
+            }
+            &::after {
+                content: "";
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+            }
+        }
+    }
+}
+
+

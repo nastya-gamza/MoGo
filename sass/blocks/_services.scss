@@ -1,0 +1,60 @@
+.services {
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        gap: 100px 30px;
+        place-items: center;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+
+    }
+
+    &__item-img {
+        width: 70px;
+        height: 70px;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        &--photography {
+            background-image: url('../img/services/services-01.svg');
+        }
+
+        &--design {
+            background-image: url('../img/services/services-02.svg');
+        }
+
+        &--creativity {
+            background-image: url('../img/services/services-03.svg');
+        }
+
+        &--seo {
+            background-image: url('../img/services/services-04.svg');
+        }
+
+        &--css {
+            background-image: url('../img/services/services-05.svg');
+        }
+
+        &--digital {
+            background-image: url('../img/services/services-06.svg');
+        }
+    }
+
+    &__item-desc {
+        padding: 20px 0;
+    }
+
+    &__item-title {
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+}
