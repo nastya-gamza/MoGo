@@ -1,0 +1,63 @@
+.clients {
+    position: relative;
+    height: 900px;
+    background-image: url('../../img/clients/clients-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+
+    &::before {
+        position: absolute;
+        content: "";
+        clear: both;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: -1;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 42px 50px;
+    }
+
+    &__item {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__item-img {
+        width: 130px;
+        height: 130px;
+        padding-top: 10px;
+        border-radius: 50%;
+    }
+
+    &__item-name {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__item-job {
+        text-transform: uppercase;
+    }
+
+    &__item-comment {
+        &::before {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 4px;
+            margin: 15px 0;
+            background-color: $accent;
+            margin: 32px 0 52px;
+        }
+    }
+}
+

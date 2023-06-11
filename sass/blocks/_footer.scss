@@ -1,0 +1,158 @@
+.footer {
+    padding-top: 75px;
+
+    &__top {
+        display: grid;
+        grid-template-columns: 1fr 1fr 270px;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    &__media {
+        color: $lightgray;
+    }
+
+    &__logo {
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        margin-bottom: 60px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        
+        &-input {
+            padding: 20px 7px;
+            width: 100%;
+            border: 1px solid $lightgray;
+            border-right: none;
+            color: $dark;
+            text-align: center;
+        }
+
+        &-btn {
+            border: 1px solid $main;
+            background-color: $main;
+            font-weight: 700;
+            color: $white;
+            text-transform: uppercase;
+            padding: 0 17px;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    &__instagram {
+    }
+
+    &__bottom {
+        border-top: 1px solid $lightgray;
+    }
+    &__copy{
+        padding: 20px 0;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.socials {
+
+    margin-bottom: 45px;
+
+    &__info {
+        border-bottom: 1px solid $lightgray;
+        padding-bottom: 25px;
+        margin-bottom: 10px;
+        font-style: italic;
+        color: $dark;
+        text-transform: uppercase;
+        
+        span {
+            font-size: 36px;
+            font-weight: 700;
+            font-style: normal;
+            text-transform: lowercase;
+        }
+    }
+
+    &__icons {
+    }
+
+    &__icons-list{
+        display: flex;
+        
+        
+        li:first-child {
+            font-size: 13px;
+            font-style: italic;
+            margin-right: 50px;
+        }
+    }
+    &__icons-item {
+        color: $main;
+        transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        margin-right: 12px;
+        
+        &:hover {
+            color: $accent;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.instagram-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+
+    &__link {
+        font-size: 13px;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__item {
+
+    }
+
+    &__item-link {
+        display: flex;
+        gap: 30px;
+    }
+    &__item-img {
+    }
+
+    &__item-desc {
+    }
+
+    &__item-title {
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__item-date {
+        font-size: 13px;
+    }
+}
+

@@ -1,7 +1,12 @@
 .reviews {
 
-    background-color: #F8F8F8;
     padding: 42px 0;
+    margin-bottom: 84px;
+
+    &--bg {
+        background-color: #F8F8F8;
+        margin-bottom: 0;
+    }
     
     &__container {
         position: relative;
@@ -37,6 +42,15 @@
     &__img {
         padding: 33px;
         border: 2px solid $main;
+    }
+
+    &__photo {
+        width: 430px; /*???????*/
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
     }
 
     &__icon {

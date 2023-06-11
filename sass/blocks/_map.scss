@@ -1,0 +1,41 @@
+.map {
+
+    height: 231px;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../../img/map/map-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 36px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $accent;
+        padding-top: 45px;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 42px;
+            height: 42px;
+            background-image: url('../../img/icons/map-icon.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            margin: 0 auto 30px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 170px;
+            height: 4px;
+            background-color: #F38281;
+            margin: 50px auto 0;
+        }
+    }
+}
