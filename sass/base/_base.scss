@@ -12,7 +12,7 @@ body {
   font-family: $font-main;
   font-size: 18px;
   color: $dark;
-  line-height: 1;
+  line-height: 1.167;
 }
 
 h1 {
@@ -30,12 +30,6 @@ h1 {
   max-width: 1200px;
 }
 
-.section-title {
-    font-family: $font-accent;
-    font-size: 30px;
-    color: $dark;
-}
-
 .about,
 .services,
 .devices,
@@ -45,6 +39,12 @@ h1 {
 .clients,
 .stories {
   padding: 70px 0 105px;
+}
+
+.section-title {
+    font-family: $font-accent;
+    font-size: 30px;
+    color: $dark;
 }
 
 .section-top {
@@ -59,27 +59,25 @@ h1 {
 
   &__title {
     position: relative;
-    font-weight: 900;
     font-size: 36px;
+    font-weight: 900;
     text-transform: uppercase;
-    margin-bottom: 90px;
 
     &::after {
+      content: "";
       position: absolute;
       left: 50%;
       bottom: -45px;
       transform: translateX(-50%);
-      content: "";
       display: block;
-      clear: both;
       width: 170px;
       height: 4px;
+      clear: both;
       background-color: #F38281;
-      
     }
   }
 
   &__text {
-    line-height: 1.167;
+    margin-top: 90px;
   }
 }

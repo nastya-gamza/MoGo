@@ -1,0 +1,27 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin pseudo-element($content: '', $display: block, $pos: absolute) { 
+    content: $content; 
+    display: $display; 
+    position: $pos; 
+    clear: both;
+}
+
+@mixin background ($imgpath, $pos: center, $repeat: no-repeat, $size) {
+    background: {
+        image: url($imgpath);
+        position: $pos;
+        repeat: $repeat;
+        size: $size;
+    }
+}
+
+@mixin mediaScreen {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}

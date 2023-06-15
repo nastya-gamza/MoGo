@@ -32,6 +32,15 @@
             border-right: none;
             color: $dark;
             text-align: center;
+            transition: border-color 0.3s ease-in-out;
+            &:hover {
+                border-color: $main;
+            }
+            &:focus {
+                border-color: $main;
+                box-shadow: 0 0 20px 1px $main;
+                box-shadow: $main 0px 15px 40px -12px;
+            }
         }
 
         &-btn {
@@ -41,6 +50,15 @@
             color: $white;
             text-transform: uppercase;
             padding: 0 17px;
+            transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+            &:hover {
+                background-color: #87D2C4;
+                border: 1px solid #87D2C4;
+            }
+            &:active {
+                background-color: #5C958A;
+                border: 1px solid #5C958A;
+            }
         }
     }
 
@@ -51,12 +69,10 @@
         margin-bottom: 40px;
     }
 
-    &__instagram {
-    }
-
     &__bottom {
         border-top: 1px solid $lightgray;
     }
+
     &__copy{
         padding: 20px 0;
         text-align: center;
@@ -86,9 +102,6 @@
         }
     }
 
-    &__icons {
-    }
-
     &__icons-list{
         display: flex;
         
@@ -116,12 +129,38 @@
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 40px;
 
+    &__item {
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        }
+    }
+
     &__link {
+        position: relative;
         font-size: 13px;
         text-transform: uppercase;
+        text-decoration: none;
+        transition: text-decoration 0.3s ease-in-out;
 
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 1px;
+            background-color: $dark;
+            transition: width 0.3s ease-in-out;
+        }
+        
         &:hover {
-            text-decoration: underline;
+            &::after {
+                width: 100%;
+            }
         }
     }
 }
@@ -132,17 +171,21 @@
     gap: 20px;
 
     &__item {
+        &:hover {
+            .blogs__item-img {
+                opacity: 1;
+            }
+        }
+    }
 
+    &__item-img {
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
     }
 
     &__item-link {
         display: flex;
         gap: 30px;
-    }
-    &__item-img {
-    }
-
-    &__item-desc {
     }
 
     &__item-title {

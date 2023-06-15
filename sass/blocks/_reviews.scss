@@ -1,11 +1,10 @@
 .reviews {
 
-    padding: 42px 0;
-    margin-bottom: 84px;
-
+    padding: 115px 0;
+    
     &--bg {
+        padding: 45px 0;
         background-color: #F8F8F8;
-        margin-bottom: 0;
     }
     
     &__container {
@@ -15,66 +14,77 @@
         display: flex;
         align-items: center;
         column-gap: 30px;
+
         &::before,
         &::after {
-            position: absolute;
             content: "";
+            position: absolute;
             display: block;
             clear: both;
-            width: 42px;
-            height: 42px;
-            background-image: url(../../img/icons/arrow.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-            transition: all 0.3s;
+            width: 22px;
+            height: 22px;
+            border-bottom: 2px solid $lightgray;
+            border-left: 2px solid $lightgray;
+            transition: all 0.3s ease-in-out;
             top: 50%;
+            cursor: pointer;
         }
+
         &::before {
-            left: -95px;
-            transform: translateY(-50%) rotate(90deg);
+            left: -80px;
+            transform: translateY(-50%) rotate(45deg);
         }
+        
         &::after {
-            right: -95px;
-            transform: translateY(-50%) rotate(270deg);
-        }
-    }
-
-    &__img {
-        padding: 33px;
-        border: 2px solid $main;
-    }
-
-    &__photo {
-        width: 430px; /*???????*/
-        img {
-            border-radius: 50%;
-            width: 100%;
-            height: 100%;
+            right: -80px;
+            transform: translateY(-50%) rotate(-135deg);
         }
     }
 
     &__icon {
-        height: 100px;
-        width: 100px;
-        background-image: url('../../img/icons/reveiw-icon.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
+        padding: 33px;
+        border: 2px solid $main;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 90px;
+            width: 90px;
+            background-image: url('../img/icons/reveiw-icon.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
     }
 
-    &__inner {
+    &__photo {
+        border-radius: 50%;
     }
 
     &__text {
-        font-style: italic;
-        font-weight: 500;
         font-size: 24px;
+        font-weight: 500;
+        font-style: italic;
         color: $lightgray;
         margin-bottom: 25px;
     }
 
     &__auther {
+        position: relative;
         font-family: $font-accent;
         font-size: 30px;
+        padding-left: 125px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 45%;
+            display: block;
+            width: 70px;
+            height: 4px;
+            clear: both;
+            background-color: $accent;
+        }
     }
 }

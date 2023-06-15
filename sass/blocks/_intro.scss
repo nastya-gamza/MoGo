@@ -1,17 +1,15 @@
 .intro {
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(../img/main/bg-intro.jpg);
     padding-top: 185px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 1024px;
-    color: #fff;
-    text-align: center;
+    color: $white;
 
     &__content {
         max-width: 830px;
-        width: 100%;
         margin: 0 auto;
-        margin-bottom: 115px;
+        margin-bottom: 100px;
         text-align: center;
     }
 
@@ -35,48 +33,58 @@
             clear: both;
             width: 170px;
             height: 4px;
-            background-color: #fff;
+            background-color: $white;
             margin: 45px auto 0;
           }
     }
 
     &__link {
         display: inline-block;
-        border: 4px solid #FFFFFF;
+        border: 4px solid $white;
         padding: 23px 104px;
         font-weight: 700;
         font-size: 24px;
         text-transform: uppercase;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        &:hover {
+            background-color: $white;
+            color: #E4BE8D;
+        }
+        &:active {
+            border: 4px solid #E4BE8D;
+            background-color: $white;
+            color: #E4BE8D;
+        }
     }
 
     &__slider {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
     }
 
     &__slide {
-        position: relative;
-        width: calc(100%/4 - 30px);
-        padding: 25px 0;
         border-top: 4px solid $light;
+        padding: 20px 0;
         font-size: 18px;
         color: $light;
-        text-align: left;
         text-transform: uppercase;
     }
 
     &__slide--active {
+        position: relative;
         border-top: 4px solid $white;
         color: $white;
 
         &::before {
             content: "";
+            display: block;
+            clear: both;
             position: absolute;
             top: -4px;
             left: 0;
             width: 25%;
             height: 4px;
-            display: block;
             background-color: $accent;
         }
     }

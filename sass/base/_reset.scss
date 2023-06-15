@@ -18,7 +18,12 @@ a {
 }
 
 img {
-  display: block;
+  vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
 }
 
 ul,

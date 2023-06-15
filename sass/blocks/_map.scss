@@ -1,7 +1,7 @@
 .map {
 
     height: 231px;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../../img/map/map-bg.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/map/map-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,18 +15,18 @@
         font-weight: 900;
         text-transform: uppercase;
         color: $accent;
-        padding-top: 45px;
+        padding-top: 40px;
 
         &::before {
             content: "";
             display: block;
             width: 42px;
             height: 42px;
-            background-image: url('../../img/icons/map-icon.svg');
+            background-image: url('../img/icons/map-icon.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            margin: 0 auto 30px;
+            margin-bottom: 20px;
         }
 
         &::after {
@@ -34,8 +34,16 @@
             display: block;
             width: 170px;
             height: 4px;
-            background-color: #F38281;
-            margin: 50px auto 0;
+            background-color: $accent;
+            margin: 40px auto 0;
+        }
+    }
+
+    &__link {
+        transition: text-shadow 0.3s ease-in-out;
+        &:hover {
+            text-shadow: 2px 7px 5px rgb(245, 182, 180), 
+            0px -4px 10px rgb(255, 255, 255);
         }
     }
 }

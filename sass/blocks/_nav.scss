@@ -1,5 +1,4 @@
 .nav {
-    align-self: flex-start;
 
     &__list {
         display: flex;
@@ -9,7 +8,6 @@
     }
 
     &__link {
-        align-self: flex-start;
         width: 114px;
         position: relative;
         display: flex;
@@ -17,29 +15,27 @@
         align-items: center;
         font-size: 14px;
         font-weight: 600;
-        text-align: center;
         color: $white;
         transition: color 0.3s ease-in-out;
-
-        &:hover {
-            color: $hover;
-        }
-
+        
         &::after {
             content: "";
             display: block;
             position: absolute;
-            bottom: -5px;
+            bottom: -50%;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translate(-50%, 50%);
             width: 0;
             height: 2px;
             background-color: $hover;
             transition: width 0.3s ease-in-out;
         }
-
-        &:hover::after {
-            width: 85%;
+        
+        &:hover {
+            color: $hover;
+            &::after {
+                width: 85%;
+            }
         }
     }
 
@@ -47,6 +43,7 @@
     &__item--cart {
         width: 50px;
         fill: $white;
+        
         &:hover {
             fill: $hover;
         }

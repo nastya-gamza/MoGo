@@ -1,79 +1,119 @@
 .what-we-do {
+
     &__top {
         margin-bottom: 80px;
     }
 
     &__container {
-        display: flex;
-        justify-content: space-between;
-        column-gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(385px, 1fr));
+        justify-items: center;
+        gap: 30px;
     }
 }
 
-
 .accordion {
-    flex: 1 1 auto;
-}
-
-.accordion__checkbox, 
-.accordion-content { 
-    display: none; 
+    width: 100%;
 }
 
 .tab {
-    border: 1px solid $lightgray; 
-    margin-bottom: 22px; 
-}
-
-.tab-title {
     position: relative;
-    display: block; 
-    padding: 32px 32px 32px 100px; 
-    font-weight: 700;
-    font-size: 24px;
-    text-transform: uppercase; 
-    cursor: pointer; 
+    border: 1px solid $lightgray; 
+
+    &:not(:last-child) {
+        margin-bottom: 22px; 
+    }
+    
+    &__title {
+        position: relative;
+        display: block; 
+        padding: 32px 32px 32px 100px; 
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: uppercase; 
+        cursor: pointer; 
+        transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 0 10px 1px $main;
+        }
+
+        &--photography::before {
+            background-image: url(../img/what-we-do/what-we-do-icon-1.svg);
+        }
+        &--creativity::before {
+            background-image: url(../img/what-we-do/what-we-do-icon-2.svg);
+        }
+        &--design::before {
+            background-image: url(../img/what-we-do/what-we-do-icon-3.svg);
+        }
+
+        &::before,
+        &::after {
+            content: ''; 
+            position: absolute;
+            display: block;
+            clear: both;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &::before {
+            width: 42px;
+            height: 42px;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 50%;
+            left: 18px;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            width: 22px;
+            height: 22px;
+            border-bottom: 2px solid $lightgray;
+            border-left: 2px solid $lightgray;
+            top: 40%;
+            right: 30px;
+            transform: rotate(135deg);
+        }
+    }
+
+    &__content {
+        position: relative;
+        overflow: hidden;
+        max-height: 0;
+        overflow-y: scroll;
+        transition: max-height 0.3s ease-in;
+        p {
+            padding: 10px 20px; 
+        }
+
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+            
+        &::-webkit-scrollbar-track {
+            background-color: #F5F5F5;
+        }
+            
+        &::-webkit-scrollbar-thumb {
+            background-color: $main;
+            box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+        }
+    }
+
+    &--active {
+        .tab__content {
+            border-top: 1px solid $lightgray;
+        }
+        
+        .tab__title {
+            box-shadow: 0 0 10px 1px $main;
+        }
+
+        .tab__title::after {
+            transform: translateY(-50%) rotate(315deg);
+        }
+    }
 }
 
-.tab-title::before, 
-.tab-title::after {
-    content: ''; 
-    position: absolute;
-    display: block;
-    width: 42px;
-    height: 42px;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all 0.3s;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.tab-title::before {
-    background-image: url(../../img/what-we-do/what-we-do-icon-1.svg);
-    left: 18px;
-}
-
-.tab-title::after {
-    background-image: url(../../img/icons/arrow.svg);
-    right: 20px;
-}
-
-.accordion-content {
-    padding: 10px 20px; 
-    overflow: auto;
-    height: 170px;
-}
-
-.tab :checked + .tab-title {
-    border-bottom: 1px solid $lightgray; 
-}
-
-.tab :checked + .tab-title::after {
-    right: 30px;
-    transform: translateY(-50%) rotate(180deg);
-}
-
-.tab :checked ~ .accordion-content {
-    display: block; 
-}

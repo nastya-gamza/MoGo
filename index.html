@@ -8,6 +8,11 @@
     <title>MoGo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.ico" sizes="16x16" type="image/x-icon">
+    <link rel="icon" href="img/favicons/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&display=swap"
         rel="stylesheet">
@@ -20,16 +25,29 @@
         <div class="wrapper">
             <div class="header__row">
                 <div class="header__logo">
-                    <a href="/"><img src="img/logo.svg" alt="logo"></a>
+                    <a href="/">
+                        <svg class="logo" width="98" height="27" viewBox="0 0 98 27" fill="white"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.16 25.74V10.512L14.652 21.6H11.412L5.904 10.512V25.74H0V0.18H6.408L13.032 13.536L19.692 0.18H26.064V25.74H20.16Z" />
+                            <path
+                                d="M39.1882 26.1C37.0282 26.1 35.1922 25.644 33.6802 24.732C32.1922 23.82 31.0523 22.62 30.2603 21.132C29.4683 19.644 29.0723 18.036 29.0723 16.308C29.0723 14.556 29.4683 12.936 30.2603 11.448C31.0523 9.96 32.2042 8.76 33.7162 7.848C35.2282 6.936 37.0522 6.48 39.1882 6.48C41.3242 6.48 43.1482 6.936 44.6602 7.848C46.1722 8.76 47.3242 9.96 48.1162 11.448C48.9082 12.936 49.3042 14.556 49.3042 16.308C49.3042 18.036 48.9082 19.644 48.1162 21.132C47.3242 22.62 46.1722 23.82 44.6602 24.732C43.1482 25.644 41.3242 26.1 39.1882 26.1ZM34.9762 16.308C34.9762 17.772 35.3722 18.96 36.1642 19.872C36.9803 20.784 37.9882 21.24 39.1882 21.24C40.3642 21.24 41.3482 20.784 42.1402 19.872C42.9562 18.96 43.3643 17.772 43.3643 16.308C43.3643 14.844 42.9562 13.656 42.1402 12.744C41.3482 11.832 40.3642 11.376 39.1882 11.376C37.9882 11.376 36.9803 11.832 36.1642 12.744C35.3722 13.656 34.9762 14.844 34.9762 16.308Z" />
+                            <path
+                                d="M63.4649 25.92C61.7849 25.92 60.2009 25.608 58.7129 24.984C57.2489 24.336 55.9409 23.436 54.7889 22.284C53.6609 21.108 52.7729 19.728 52.1249 18.144C51.5009 16.536 51.1889 14.748 51.1889 12.78C51.1889 11.004 51.5009 9.348 52.1249 7.812C52.7729 6.276 53.6729 4.92 54.8249 3.744C56.0009 2.568 57.3569 1.656 58.8929 1.008C60.4529 0.335999 62.1329 0 63.9329 0C66.2849 0 68.3489 0.504001 70.1249 1.512C71.9249 2.52 73.2689 3.876 74.1569 5.58L69.7649 8.892C69.1889 7.764 68.3489 6.876 67.2449 6.228C66.1409 5.58 64.9649 5.256 63.7169 5.256C62.4209 5.256 61.2809 5.604 60.2969 6.3C59.3129 6.972 58.5449 7.896 57.9929 9.072C57.4409 10.248 57.1649 11.556 57.1649 12.996C57.1649 14.46 57.4529 15.78 58.0289 16.956C58.6049 18.108 59.3969 19.02 60.4049 19.692C61.4369 20.34 62.6249 20.664 63.9689 20.664C66.2729 20.664 68.3489 19.608 70.1969 17.496V16.668H65.2289V12.384H75.0929V25.74H70.1969V23.22C68.2529 25.02 66.0089 25.92 63.4649 25.92Z" />
+                            <path
+                                d="M87.5281 26.1C85.3681 26.1 83.5321 25.644 82.0201 24.732C80.5321 23.82 79.3921 22.62 78.6001 21.132C77.8081 19.644 77.4121 18.036 77.4121 16.308C77.4121 14.556 77.8081 12.936 78.6001 11.448C79.3921 9.96 80.5441 8.76 82.0561 7.848C83.5681 6.936 85.3921 6.48 87.5281 6.48C89.6641 6.48 91.4881 6.936 93.0001 7.848C94.5121 8.76 95.6641 9.96 96.4561 11.448C97.2481 12.936 97.6441 14.556 97.6441 16.308C97.6441 18.036 97.2481 19.644 96.4561 21.132C95.6641 22.62 94.5121 23.82 93.0001 24.732C91.4881 25.644 89.6641 26.1 87.5281 26.1ZM83.3161 16.308C83.3161 17.772 83.7121 18.96 84.5041 19.872C85.3201 20.784 86.3281 21.24 87.5281 21.24C88.7041 21.24 89.6881 20.784 90.4801 19.872C91.2961 18.96 91.7041 17.772 91.7041 16.308C91.7041 14.844 91.2961 13.656 90.4801 12.744C89.6881 11.832 88.7041 11.376 87.5281 11.376C86.3281 11.376 85.3201 11.832 84.5041 12.744C83.7121 13.656 83.3161 14.844 83.3161 16.308Z" />
+                        </svg>
+                    </a>
                 </div>
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
                         <li class="nav__item"><a class="nav__link" href="#service">Service</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#workg">Work</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#work">Work</a></li>
                         <li class="nav__item"><a class="nav__link" href="#blog">Blog</a></li>
                         <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
-                        <li class="nav__item"><a class="nav__link nav__item--search" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link nav__item--search" href="#">
                                 <svg width="22" height="16" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M15.39 11.3101H11.2C11.0674 11.3101 10.9402 11.2574 10.8465 11.1636C10.7527 11.0698 10.7 10.9427 10.7 10.8101C10.7 10.6775 10.7527 10.5503 10.8465 10.4565C10.9402 10.3627 11.0674 10.3101 11.2 10.3101H15.39C15.5226 10.3101 15.6498 10.3627 15.7436 10.4565C15.8373 10.5503 15.89 10.6775 15.89 10.8101C15.89 10.9427 15.8373 11.0698 15.7436 11.1636C15.6498 11.2574 15.5226 11.3101 15.39 11.3101Z" />
@@ -41,16 +59,19 @@
                                         d="M9.54004 15.6899C8.9467 15.6899 8.36668 15.514 7.87333 15.1844C7.37998 14.8547 6.99546 14.3862 6.7684 13.838C6.54134 13.2898 6.48193 12.6866 6.59768 12.1047C6.71344 11.5227 6.99916 10.9882 7.41872 10.5686C7.83828 10.1491 8.37283 9.86334 8.95477 9.74759C9.53671 9.63183 10.1399 9.69124 10.6881 9.9183C11.2363 10.1454 11.7048 10.5299 12.0344 11.0232C12.3641 11.5166 12.54 12.0966 12.54 12.6899C12.54 13.4856 12.224 14.2487 11.6614 14.8113C11.0988 15.3739 10.3357 15.6899 9.54004 15.6899ZM9.54004 10.6899C9.14448 10.6899 8.7578 10.8072 8.4289 11.027C8.1 11.2468 7.84366 11.5591 7.69228 11.9246C7.54091 12.29 7.5013 12.6922 7.57847 13.0801C7.65564 13.4681 7.84612 13.8245 8.12583 14.1042C8.40553 14.3839 8.7619 14.5743 9.14986 14.6515C9.53782 14.7287 9.93995 14.6891 10.3054 14.5377C10.6709 14.3863 10.9832 14.13 11.203 13.8011C11.4227 13.4722 11.54 13.0855 11.54 12.6899C11.54 12.1595 11.3293 11.6508 10.9543 11.2757C10.5792 10.9007 10.0705 10.6899 9.54004 10.6899Z" />
                                     <path
                                         d="M17.05 15.6899C16.4566 15.6899 15.8766 15.514 15.3833 15.1844C14.8899 14.8547 14.5054 14.3862 14.2784 13.838C14.0513 13.2898 13.9919 12.6866 14.1076 12.1047C14.2234 11.5227 14.5091 10.9882 14.9287 10.5686C15.3482 10.1491 15.8828 9.86334 16.4647 9.74759C17.0467 9.63183 17.6499 9.69124 18.198 9.9183C18.7462 10.1454 19.2148 10.5299 19.5444 11.0232C19.874 11.5166 20.05 12.0966 20.05 12.6899C20.05 13.4856 19.7339 14.2487 19.1713 14.8113C18.6087 15.3739 17.8456 15.6899 17.05 15.6899ZM17.05 10.6899C16.6544 10.6899 16.2677 10.8072 15.9388 11.027C15.61 11.2468 15.3536 11.5591 15.2022 11.9246C15.0509 12.29 15.0112 12.6922 15.0884 13.0801C15.1656 13.4681 15.3561 13.8245 15.6358 14.1042C15.9155 14.3839 16.2718 14.5743 16.6598 14.6515C17.0478 14.7287 17.4499 14.6891 17.8154 14.5377C18.1808 14.3863 18.4932 14.13 18.7129 13.8011C18.9327 13.4722 19.05 13.0855 19.05 12.6899C19.05 12.1595 18.8393 11.6508 18.4642 11.2757C18.0891 10.9007 17.5804 10.6899 17.05 10.6899Z" />
-                                </svg></a>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="nav__item"><a class="nav__link nav__item--cart" href="#">
+                        <li class="nav__item">
+                            <a class="nav__link nav__item--cart" href="#">
                                 <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M7.74998 15C6.31521 15 4.91271 14.5743 3.72002 13.7768C2.52733 12.9792 1.5981 11.8457 1.04996 10.5198C0.501814 9.19389 0.359413 7.73513 0.64078 6.32823C0.922148 4.92132 1.61463 3.62953 2.63056 2.6164C3.6465 1.60327 4.94019 0.91436 6.34787 0.63688C7.75555 0.3594 9.21391 0.505831 10.5383 1.05763C11.8627 1.60944 12.9936 2.5418 13.7879 3.73668C14.5821 4.93157 15.0039 6.33524 15 7.77C14.992 9.68854 14.225 11.5259 12.8665 12.8807C11.508 14.2354 9.66853 14.9974 7.74998 15ZM7.74998 1.5C6.5147 1.50001 5.30712 1.86607 4.27975 2.55195C3.25238 3.23782 2.4513 4.21276 1.97767 5.35364C1.50404 6.49451 1.3791 7.75015 1.61864 8.96198C1.85819 10.1738 2.45146 11.2875 3.32354 12.1624C4.19561 13.0372 5.30739 13.6341 6.51845 13.8775C7.72951 14.1209 8.98554 14 10.1279 13.53C11.2703 13.06 12.2478 12.262 12.937 11.2369C13.6261 10.2117 13.996 9.00528 14 7.77C14 6.1124 13.3415 4.52269 12.1694 3.35059C10.9973 2.17848 9.40758 1.52 7.74998 1.52V1.5Z" />
                                     <path
                                         d="M19 19.5199C18.9344 19.5207 18.8694 19.5078 18.8091 19.4819C18.7488 19.4561 18.6946 19.4179 18.65 19.3699L12.17 12.8899C12.0772 12.7971 12.025 12.6712 12.025 12.5399C12.025 12.4086 12.0772 12.2827 12.17 12.1899C12.2628 12.0971 12.3887 12.0449 12.52 12.0449C12.6513 12.0449 12.7772 12.0971 12.87 12.1899L19.35 18.6699C19.3978 18.7148 19.436 18.769 19.462 18.8292C19.4881 18.8894 19.5015 18.9543 19.5015 19.0199C19.5015 19.0855 19.4881 19.1504 19.462 19.2106C19.436 19.2708 19.3978 19.325 19.35 19.3699C19.3054 19.4179 19.2511 19.4561 19.1909 19.4819C19.1306 19.5078 19.0656 19.5207 19 19.5199Z" />
                                 </svg>
-                            </a></li>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- <div class="header__burger">
@@ -60,8 +81,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="intro"
-            style="background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(img/main/bg-intro.jpg);">
+        <section class="intro">
             <div class="wrapper">
                 <div class="intro__content">
                     <h2 class="intro__subtitle">Creative Template</h2>
@@ -70,25 +90,21 @@
                 </div>
                 <div class="intro__slider">
                     <div class="intro__slide intro__slide--active">
-                        <span class="intro__slide-number">01</span>
-                        <span class="intro__slide-name">intro</span>
+                        <div class="intro__slide-info"><span class="intro__slide-number">01</span> intro </div>
                     </div>
                     <div class="intro__slide">
-                        <span class="intro__slide-number">02</span>
-                        <span class="intro__slide-name">work</span>
+                        <div class="intro__slide-info"><span class="intro__slide-number">02</span> work </div>
                     </div>
                     <div class="intro__slide">
-                        <span class="intro__slide-number">03</span>
-                        <span class="intro__slide-name">about</span>
+                        <div class="intro__slide-info"><span class="intro__slide-number">03</span> about </div>
                     </div>
                     <div class="intro__slide">
-                        <span class="intro__slide-number">04</span>
-                        <span class="intro__slide-name">contacts</span>
+                        <div class="intro__slide-info"><span class="intro__slide-number">04</span> contacts </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about none1" id="about">
             <div class="wrapper">
                 <div class="section-top about__top">
                     <div class="section-top__subtitle">What we do</div>
@@ -99,18 +115,18 @@
                 </div>
                 <div class="about__row">
                     <div class="about__item">
-                        <div class="about__img"><img src="img/about/3.jpg" alt="" width="370" height="338"></div>
+                        <div class="about__img"><img src="img/about/about-01.jpg" alt="" width="370" height="338"></div>
                     </div>
                     <div class="about__item">
-                        <div class="about__img"><img src="img/about/2.jpg" alt="" width="370" height="338"></div>
+                        <div class="about__img"><img src="img/about/about-02.jpg" alt="" width="370" height="338"></div>
                     </div>
                     <div class="about__item">
-                        <div class="about__img"><img src="img/about/3.jpg" alt="" width="370" height="338"></div>
+                        <div class="about__img"><img src="img/about/about-03.jpg" alt="" width="370" height="338"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="futures">
+        <div class="futures none1">
             <div class="wrapper">
                 <div class="futures__row">
                     <div class="futures__item">
@@ -136,9 +152,9 @@
                 </div>
             </div>
         </div>
-        <section class="services">
+        <section class="services none1" id="service">
             <div class="wrapper">
-                <div class="section-top">
+                <div class="section-top services__top">
                     <div class="section-top__subtitle">We worck with</div>
                     <div class="section-top__title">Amazing services</div>
                 </div>
@@ -194,7 +210,7 @@
                 </div>
             </div>
         </section>
-        <section class="devices">
+        <section class="devices none1">
             <div class="wrapper">
                 <div class="section-top devices__top">
                     <div class="section-top__subtitle">For all devices</div>
@@ -208,7 +224,7 @@
 
             </div>
         </section>
-        <section class="what-we-do">
+        <section class="what-we-do none1">
             <div class="wrapper">
                 <div class="section-top what-we-do__top">
                     <div class="section-top__subtitle">Service</div>
@@ -218,89 +234,89 @@
                         viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
                 </div>
                 <div class="what-we-do__container">
-                    <div class="what-we-do__img"><img src="img/what-we-do/what-we-do.jpg" alt=""></div>
+                    <img class="what-we-do__img" src="img/what-we-do/what-we-do.jpg" alt="">
                     <div class="accordion">
-                        <div class="tab">
-                            <input type="checkbox" class="accordion__checkbox" id="tab-1" name="tab-group">
-                            <label for="tab-1" class="tab-title">Photography</label>
-                            <p class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Similique
-                                eaque alias necessitatibus tempore fuga vero laborum quia dolorem delectus molestias
-                                vel, ipsum provident veritatis nulla voluptatem perspiciatis repellendus voluptas?
-                                Pariatur laborum ipsam, sapiente fugit eos, quaerat libero totam exercitationem sit,
-                                provident ducimus. Velit maxime facere quos. Sapiente harum autem earum. Ea dolorum
-                                saepe ipsum perferendis cupiditate a nisi blanditiis ipsa, impedit exercitationem alias
-                                magni incidunt debitis enim sint cumque itaque illum rem corrupti dolore. Ipsum illo
-                                deleniti minus est, distinctio repellat! Autem saepe, temporibus earum libero incidunt
-                                esse repudiandae illo veritatis non doloremque, necessitatibus quas. Soluta eius aperiam
-                                aliquam eos deleniti molestias magnam autem debitis culpa dolorum iusto consequatur
-                                deserunt dolore recusandae repudiandae dolorem blanditiis atque, harum maiores sit
-                                possimus voluptates? Quis assumenda praesentium est magnam, facere corporis, similique,
-                                atque sapiente ullam recusandae vel inventore. Molestias nemo consequatur sequi maiores.
-                                Maxime tempore, aut molestiae fugiat nihil ut laudantium. A, totam.
-                            </p>
-                        </div>
-                        <div class="tab">
-                            <input type="checkbox" class="accordion__checkbox" id="tab-2" name="tab-group">
-                            <label for="tab-2" class="tab-title">Creativity</label>
-                            <p class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                                natus
-                                doloribus facere voluptatibus itaque molestias laboriosam voluptate veniam repudiandae
-                                sit. Culpa necessitatibus itaque in quasi non sint facilis optio! Obcaecati, voluptatum
-                                voluptates atque optio eos error! Saepe incidunt voluptate soluta alias provident!
-                                Assumenda quia est quisquam expedita, voluptas delectus nobis! Accusamus perspiciatis
-                                magni adipisci laudantium dignissimos quasi labore voluptatibus dolorem aperiam ea quae
-                                doloribus tempora neque corrupti, vitae enim autem asperiores explicabo velit, eius
-                                impedit sequi est aliquid exercitationem. Ducimus maxime asperiores modi aperiam aliquam
-                                dignissimos similique sapiente. Perspiciatis, ratione quisquam neque eligendi, quae,
-                                enim cupiditate modi facere voluptatum ullam eveniet consequatur autem. Tempore aut,
-                                facere esse dignissimos quae facilis ex distinctio ad reprehenderit tenetur, eos
-                                architecto perspiciatis aliquid ratione, fugiat quaerat. Aspernatur labore magni
-                                quaerat, maiores quo, corporis dolores veritatis doloremque minus quod eligendi est. Ex
-                                hic ea dignissimos repudiandae recusandae dolores reiciendis, adipisci facilis fuga
-                                omnis illo vitae!</p>
-                        </div>
-                        <div class="tab">
-                            <input type="checkbox" class="accordion__checkbox" id="tab-3" name="tab-group">
-                            <label for="tab-3" class="tab-title">Web design</label>
-                            <p class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                                voluptates maiores veritatis perferendis hic vero magnam cum amet nihil quasi deserunt
-                                at totam voluptatum accusantium tempora, nostrum ipsa odio et quam fugit est tenetur.
-                                Alias porro nemo laboriosam voluptatem. Inventore ut ipsa a excepturi adipisci itaque
-                                dolorum, nostrum sint maiores doloribus natus et. Distinctio quo quis, eius facilis
-                                consectetur, error, delectus voluptatibus quae ea quia earum explicabo incidunt quidem
-                                magni eos. Ea natus magni fuga autem velit, eligendi praesentium iusto quod, atque saepe
-                                ullam quisquam, modi provident. Nisi atque possimus molestiae ipsum ratione, enim
-                                voluptatem aliquam! Corrupti, distinctio expedita quod voluptatum molestias vitae id,
-                                explicabo repellat error perspiciatis, magni praesentium adipisci doloremque illum?
-                                Assumenda sit totam, nihil quasi quis possimus dolorem dolor atque recusandae est sunt
-                                beatae, dolores voluptatem magnam iste! Laudantium consequuntur cumque ea magnam
-                                consectetur ducimus nesciunt sunt impedit quae. Sapiente magnam recusandae totam hic,
-                                nihil atque veniam!</p>
+                        <div class="accordion">
+                            <div class="tab">
+                                <div class="tab__title tab__title--photography">Creativity</div>
+                                <div class="tab__content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Similique
+                                    eaque alias necessitatibus tempore fuga vero laborum quia dolorem delectus molestias
+                                    vel, ipsum provident veritatis nulla voluptatem perspiciatis repellendus voluptas?
+                                    Pariatur laborum ipsam, sapiente fugit eos, quaerat libero totam exercitationem sit,
+                                    provident ducimus. Velit maxime facere quos. Sapiente harum autem earum. Ea dolorum
+                                    saepe ipsum perferendis cupiditate a nisi blanditiis ipsa, impedit exercitationem alias
+                                    magni incidunt debitis enim sint cumque itaque illum rem corrupti dolore. Ipsum illo
+                                    deleniti minus est, distinctio repellat! Autem saepe, temporibus earum libero incidunt
+                                    esse repudiandae illo veritatis non doloremque, necessitatibus quas. Soluta eius aperiam
+                                    aliquam eos deleniti molestias magnam autem debitis culpa dolorum iusto consequatur
+                                    deserunt dolore recusandae repudiandae dolorem blanditiis atque, harum maiores sit
+                                    possimus voluptates? Quis assumenda praesentium est magnam, facere corporis, similique,
+                                    atque sapiente ullam recusandae vel inventore. Molestias nemo consequatur sequi maiores.
+                                    Maxime tempore, aut molestiae fugiat nihil ut laudantium. A, totam.</p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <div class="tab__title tab__title--creativity">Web design</div>
+                                <div class="tab__content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Similique
+                                    eaque alias necessitatibus tempore fuga vero laborum quia dolorem delectus molestias
+                                    vel, ipsum provident veritatis nulla voluptatem perspiciatis repellendus voluptas?
+                                    Pariatur laborum ipsam, sapiente fugit eos, quaerat libero totam exercitationem sit,
+                                    provident ducimus. Velit maxime facere quos. Sapiente harum autem earum. Ea dolorum
+                                    saepe ipsum perferendis cupiditate a nisi blanditiis ipsa, impedit exercitationem alias
+                                    magni incidunt debitis enim sint cumque itaque illum rem corrupti dolore. Ipsum illo
+                                    deleniti minus est, distinctio repellat! Autem saepe, temporibus earum libero incidunt
+                                    esse repudiandae illo veritatis non doloremque, necessitatibus quas. Soluta eius aperiam
+                                    aliquam eos deleniti molestias magnam autem debitis culpa dolorum iusto consequatur
+                                    deserunt dolore recusandae repudiandae dolorem blanditiis atque, harum maiores sit
+                                    possimus voluptates? Quis assumenda praesentium est magnam, facere corporis, similique,
+                                    atque sapiente ullam recusandae vel inventore. Molestias nemo consequatur sequi maiores.
+                                    Maxime tempore, aut molestiae fugiat nihil ut laudantium. A, totam.</p>
+                            </div>
+                            </div>
+                            <div class="tab">
+                                <div class="tab__title tab__title--design">Photography</div>
+                                <div class="tab__content">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Similique
+                                    eaque alias necessitatibus tempore fuga vero laborum quia dolorem delectus molestias
+                                    vel, ipsum provident veritatis nulla voluptatem perspiciatis repellendus voluptas?
+                                    Pariatur laborum ipsam, sapiente fugit eos, quaerat libero totam exercitationem sit,
+                                    provident ducimus. Velit maxime facere quos. Sapiente harum autem earum. Ea dolorum
+                                    saepe ipsum perferendis cupiditate a nisi blanditiis ipsa, impedit exercitationem alias
+                                    magni incidunt debitis enim sint cumque itaque illum rem corrupti dolore. Ipsum illo
+                                    deleniti minus est, distinctio repellat! Autem saepe, temporibus earum libero incidunt
+                                    esse repudiandae illo veritatis non doloremque, necessitatibus quas. Soluta eius aperiam
+                                    aliquam eos deleniti molestias magnam autem debitis culpa dolorum iusto consequatur
+                                    deserunt dolore recusandae repudiandae dolorem blanditiis atque, harum maiores sit
+                                    possimus voluptates? Quis assumenda praesentium est magnam, facere corporis, similique,
+                                    atque sapiente ullam recusandae vel inventore. Molestias nemo consequatur sequi maiores.
+                                    Maxime tempore, aut molestiae fugiat nihil ut laudantium. A, totam.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="reviews reviews--bg">
+        <section class="reviews reviews--bg none1">
             <div class="wrapper">
                 <div class="reviews__container">
-                    <div class="reviews__img">
-                        <div class="reviews__icon"></div>
-                    </div>
+                    <div class="reviews__icon"></div>
                     <div class="reviews__inner">
                         <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam
-                            platea
-                            ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed amet
-                            venenatis,
-                            massa
-                            sit.</p>
+                            platea ullamcorper feugiat amet. Id aliquet vehicula feugiat arcu arcu nulla ornare. Sed
+                            amet
+                            venenatis, massa sit.</p>
                         <div class="reviews__auther">Jon Doe</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="team">
+        <section class="team none1">
             <div class="wrapper">
                 <div class="section-top team__top">
                     <div class="section-top__subtitle">Who we are</div>
@@ -310,25 +326,61 @@
                         viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
                 </div>
                 <div class="team__gallery">
-                    <div class="team__gallery-item">
-                        <div class="team__img"><img src="img/team/team-1.jpg" alt=""></div>
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="img/team/team-1.jpg" alt="">
+                            <ul class="team__social-list">
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a></li>
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-pinterest-p"></i></a></li>
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
                         <div class="team__name">Kadin Dias</div>
                         <div class="team__position">Founder, ceo</div>
                     </div>
-                    <div class="team__gallery-item">
-                        <div class="team__img"><img src="img/team/team-2.jpg" alt=""></div>
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="img/team/team-2.jpg" alt="">
+                            <ul class="team__social-list">
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a></li>
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-pinterest-p"></i></a></li>
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
                         <div class="team__name">Zain Calzoni</div>
                         <div class="team__position">Designer</div>
                     </div>
-                    <div class="team__gallery-item">
-                        <div class="team__img"><img src="img/team/team-3.jpg" alt=""></div>
+                    <div class="team__item">
+                        <div class="team__img">
+                            <img src="img/team/team-3.jpg" alt="">
+                            <ul class="team__social-list">
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a></li>
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-pinterest-p"></i></a></li>
+                                <li class="team__social-item"><a href="#" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
                         <div class="team__name">Charlie George</div>
                         <div class="team__position">Photographer</div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="partners">
+        <div class="partners none1">
             <div class="wrapper">
                 <ul class="partners__row">
                     <li class="partners__item partner-1"><a href="#"></a></li>
@@ -340,7 +392,7 @@
                 </ul>
             </div>
         </div>
-        <section class="work">
+        <section class="work none1" id="work">
             <div class="wrapper">
                 <div class="section-top work__top">
                     <div class="section-top__subtitle">What we do</div>
@@ -350,22 +402,69 @@
                         viverra dolor sit. Aliquet congue sit fermentum risus feugiat.</p>
                 </div>
             </div>
-                <div class="work__gallery">
-                    <div class="work__item"><img src="img/work/work-1.jpg" alt="" width="378"></div>
-                    <div class="work__item"><img src="img/work/work-2.jpg" alt="" width="378"></div>
-                    <div class="work__item"><img src="img/work/work-3.jpg" alt="" width="378"></div>
-                    <div class="work__item"><img src="img/work/work-4.jpg" alt="" width="378"></div>
-                    <div class="work__item"><img src="img/work/work-5.jpg" alt="" width="378"></div>
-                    <div class="work__item"><img src="img/work/work-6.jpg" alt="" width="378"></div>
-                    <div class="work__item"><img src="img/work/work-7.jpg" alt="" width="378"></div>
+            <div class="work__gallery">
+                <div class="work__item">
+                    <img src="img/work/work-1.jpg" alt="" width="378">
+                    <div class="work__item-content">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-name">Creatively design</div>
+                        <div class="work__item-text">Lorem ipsum dolor sit</div>
+                    </div>
                 </div>
+                <div class="work__item">
+                    <img src="img/work/work-2.jpg" alt="" width="378">
+                    <div class="work__item-content">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-name">Creatively design</div>
+                        <div class="work__item-text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img src="img/work/work-3.jpg" alt="" width="378">
+                    <div class="work__item-content">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-name">Creatively design</div>
+                        <div class="work__item-text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img src="img/work/work-4.jpg" alt="" width="378">
+                    <div class="work__item-content">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-name">Creatively design</div>
+                        <div class="work__item-text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img src="img/work/work-5.jpg" alt="" width="378">
+                    <div class="work__item-content">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-name">Creatively design</div>
+                        <div class="work__item-text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img src="img/work/work-6.jpg" alt="" width="378">
+                    <div class="work__item-content">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-name">Creatively design</div>
+                        <div class="work__item-text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+                <div class="work__item">
+                    <img src="img/work/work-7.jpg" alt="" width="378">
+                    <div class="work__item-content">
+                        <div class="work__item-icon"></div>
+                        <div class="work__item-name">Creatively design</div>
+                        <div class="work__item-text">Lorem ipsum dolor sit</div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="reviews">
+        <section class="reviews none1">
             <div class="wrapper">
                 <div class="reviews__container">
-                    <div class="reviews__photo">
-                        <img src="img/reviews/reviews-1.jpg" alt="">
-                    </div>
+                    <img class="reviews__photo" src="img/reviews/reviews-1.jpg" alt="">
                     <div class="reviews__inner">
                         <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam
                             platea
@@ -378,9 +477,9 @@
                 </div>
             </div>
         </section>
-        <section class="clients">
+        <section class="clients none1">
             <div class="wrapper">
-                <div class="section-top">
+                <div class="section-top clients__top">
                     <div class="section-top__subtitle">Happy Clients</div>
                     <div class="section-top__title">What people say</div>
                 </div>
@@ -390,7 +489,9 @@
                         <div class="clients__item-text">
                             <div class="clients__item-name">Phillip Culhane</div>
                             <div class="clients__item-job">photographer</div>
-                            <p class="clients__item-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                            <p class="clients__item-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel
+                                imperdiet volutpat mauris est leo cursus.</p>
                         </div>
                     </div>
                     <div class="clients__item">
@@ -398,7 +499,9 @@
                         <div class="clients__item-text">
                             <div class="clients__item-name">Phillip Culhane</div>
                             <div class="clients__item-job">photographer</div>
-                            <p class="clients__item-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                            <p class="clients__item-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel
+                                imperdiet volutpat mauris est leo cursus.</p>
                         </div>
                     </div>
                     <div class="clients__item">
@@ -406,7 +509,9 @@
                         <div class="clients__item-text">
                             <div class="clients__item-name">Phillip Culhane</div>
                             <div class="clients__item-job">photographer</div>
-                            <p class="clients__item-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                            <p class="clients__item-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel
+                                imperdiet volutpat mauris est leo cursus.</p>
                         </div>
                     </div>
                     <div class="clients__item">
@@ -414,93 +519,125 @@
                         <div class="clients__item-text">
                             <div class="clients__item-name">Phillip Culhane</div>
                             <div class="clients__item-job">photographer</div>
-                            <p class="clients__item-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</p>
+                            <p class="clients__item-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel
+                                imperdiet volutpat mauris est leo cursus.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="stories">
+        <section class="stories none1" id="blog">
             <div class="wrapper">
-                <div class="section-top">
+                <div class="section-top stories__top">
                     <div class="section-top__subtitle">Our Stories</div>
                     <div class="section-top__title">Latest blog</div>
                 </div>
                 <div class="stories__container">
-                    <div class="stories__item">
-                        <div class="stories__item-img">
-                            <a href="#"><img src="img/stories/story-1.jpg" alt=""></a>
-                            <div class="stories__item-date"><span>15</span> jan</div>
+                    <a href="#" class="stories__item">
+                        <div class="stories__card">
+                            <div class="stories__card-img"><img src="img/stories/story-1.jpg" alt=""></div>
+                            <div class="stories__card-date"><span>15</span> jan</div>
                         </div>
                         <div class="stories__item-title">Lorem ipsum dolor sit amet</div>
-                        <div class="stories__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</div>
+                        <div class="stories__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel
+                            imperdiet
+                            volutpat mauris est leo cursus.</div>
                         <div class="stories__item-activity">
                             <span class="stories__item-views">542</span>
                             <span class="stories__item-comments">17</span>
                         </div>
-                    </div>
-                    <div class="stories__item">
-                        <div class="stories__item-img">
-                            <a href="#"><img src="img/stories/story-1.jpg" alt=""></a>
-                            <div class="stories__item-date"><span>15</span> jan</div>
+                    </a>
+                    <a href="#" class="stories__item">
+                        <div class="stories__card">
+                            <div class="stories__card-img"><img src="img/stories/story-1.jpg" alt=""></div>
+                            <div class="stories__card-date"><span>15</span> jan</div>
                         </div>
                         <div class="stories__item-title">Lorem ipsum dolor sit amet</div>
-                        <div class="stories__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</div>
+                        <div class="stories__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel
+                            imperdiet
+                            volutpat mauris est leo cursus.</div>
                         <div class="stories__item-activity">
                             <span class="stories__item-views">542</span>
                             <span class="stories__item-comments">17</span>
                         </div>
-                    </div>
-                    <div class="stories__item">
-                        <div class="stories__item-img">
-                            <a href="#"><img src="img/stories/story-1.jpg" alt=""></a>
-                            <div class="stories__item-date"><span>15</span> jan</div>
+                    </a>
+                    <a href="#" class="stories__item">
+                        <div class="stories__card">
+                            <div class="stories__card-img"><img src="img/stories/story-1.jpg" alt=""></div>
+                            <div class="stories__card-date"><span>15</span> jan</div>
                         </div>
                         <div class="stories__item-title">Lorem ipsum dolor sit amet</div>
-                        <div class="stories__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</div>
+                        <div class="stories__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel
+                            imperdiet
+                            volutpat mauris est leo cursus.</div>
                         <div class="stories__item-activity">
                             <span class="stories__item-views">542</span>
                             <span class="stories__item-comments">17</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
-        <div class="map">
+        <div class="map none1">
             <div class="wrapper">
-                <div class="map__content">Latest blog</div>
+                <div class="map__content">
+                    <a class="map__link" href="#">Latest blog</a>
+                </div>
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <footer class="footer none1" id="contact">
         <div class="wrapper">
             <div class="footer__top">
                 <div class="footer__media">
-                    <div class="footer__logo"><svg width="141" height="38" viewBox="0 0 141 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M29.1023 37.4759V15.3048L21.1512 31.4483H16.474L8.52283 15.3048V37.4759H0V0.262069H9.25038L18.8126 19.7076L28.4267 0.262069H37.6252V37.4759H29.1023Z" fill="#C6CBCD"/>
-                        <path d="M56.5709 38C53.4528 38 50.8024 37.3361 48.6197 36.0083C46.4717 34.6805 44.826 32.9333 43.6827 30.7669C42.5394 28.6005 41.9678 26.2593 41.9678 23.7435C41.9678 21.1926 42.5394 18.834 43.6827 16.6676C44.826 14.5012 46.489 12.754 48.6717 11.4262C50.8544 10.0984 53.4874 9.43448 56.5709 9.43448C59.6544 9.43448 62.2874 10.0984 64.4701 11.4262C66.6528 12.754 68.3158 14.5012 69.4591 16.6676C70.6024 18.834 71.174 21.1926 71.174 23.7435C71.174 26.2593 70.6024 28.6005 69.4591 30.7669C68.3158 32.9333 66.6528 34.6805 64.4701 36.0083C62.2874 37.3361 59.6544 38 56.5709 38ZM50.4906 23.7435C50.4906 25.8749 51.0622 27.6046 52.2056 28.9324C53.3835 30.2602 54.8386 30.9241 56.5709 30.9241C58.2685 30.9241 59.689 30.2602 60.8323 28.9324C62.0103 27.6046 62.5992 25.8749 62.5992 23.7435C62.5992 21.612 62.0103 19.8823 60.8323 18.5545C59.689 17.2267 58.2685 16.5628 56.5709 16.5628C54.8386 16.5628 53.3835 17.2267 52.2056 18.5545C51.0622 19.8823 50.4906 21.612 50.4906 23.7435Z" fill="#C6CBCD"/>
-                        <path d="M91.6159 37.7379C89.1907 37.7379 86.9041 37.2837 84.7561 36.3752C82.6427 35.4317 80.7545 34.1214 79.0915 32.4441C77.4632 30.732 76.1813 28.7228 75.2458 26.4166C74.3451 24.0754 73.8947 21.4722 73.8947 18.6069C73.8947 16.0212 74.3451 13.6101 75.2458 11.3738C76.1813 9.13747 77.4805 7.16322 79.1435 5.45104C80.8411 3.73885 82.7986 2.41103 85.0159 1.46759C87.2679 0.489195 89.6931 0 92.2915 0C95.6868 0 98.6663 0.733795 101.23 2.20138C103.828 3.66897 105.769 5.64322 107.051 8.12414L100.71 12.9462C99.8789 11.3039 98.6663 10.011 97.0726 9.06759C95.4789 8.12414 93.7813 7.65241 91.9797 7.65241C90.1088 7.65241 88.4632 8.15908 87.0427 9.17241C85.6222 10.1508 84.5135 11.4961 83.7167 13.2083C82.9199 14.9205 82.5214 16.8248 82.5214 18.9214C82.5214 21.0529 82.9372 22.9747 83.7687 24.6869C84.6002 26.3641 85.7435 27.692 87.1986 28.6703C88.6883 29.6138 90.4033 30.0855 92.3435 30.0855C95.6694 30.0855 98.6663 28.548 101.334 25.4731V24.2676H94.1624V18.0303H108.402V37.4759H101.334V33.8069C98.5277 36.4276 95.2883 37.7379 91.6159 37.7379Z" fill="#C6CBCD"/>
-                        <path d="M126.353 38C123.235 38 120.584 37.3361 118.402 36.0083C116.254 34.6805 114.608 32.9333 113.465 30.7669C112.321 28.6005 111.75 26.2593 111.75 23.7435C111.75 21.1926 112.321 18.834 113.465 16.6676C114.608 14.5012 116.271 12.754 118.454 11.4262C120.636 10.0984 123.269 9.43448 126.353 9.43448C129.436 9.43448 132.069 10.0984 134.252 11.4262C136.435 12.754 138.098 14.5012 139.241 16.6676C140.384 18.834 140.956 21.1926 140.956 23.7435C140.956 26.2593 140.384 28.6005 139.241 30.7669C138.098 32.9333 136.435 34.6805 134.252 36.0083C132.069 37.3361 129.436 38 126.353 38ZM120.272 23.7435C120.272 25.8749 120.844 27.6046 121.987 28.9324C123.165 30.2602 124.62 30.9241 126.353 30.9241C128.05 30.9241 129.471 30.2602 130.614 28.9324C131.792 27.6046 132.381 25.8749 132.381 23.7435C132.381 21.612 131.792 19.8823 130.614 18.5545C129.471 17.2267 128.05 16.5628 126.353 16.5628C124.62 16.5628 123.165 17.2267 121.987 18.5545C120.844 19.8823 120.272 21.612 120.272 23.7435Z" fill="#C6CBCD"/>
+                    <div class="footer__logo"><svg width="141" height="38" viewBox="0 0 141 38" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M29.1023 37.4759V15.3048L21.1512 31.4483H16.474L8.52283 15.3048V37.4759H0V0.262069H9.25038L18.8126 19.7076L28.4267 0.262069H37.6252V37.4759H29.1023Z"
+                                fill="#C6CBCD" />
+                            <path
+                                d="M56.5709 38C53.4528 38 50.8024 37.3361 48.6197 36.0083C46.4717 34.6805 44.826 32.9333 43.6827 30.7669C42.5394 28.6005 41.9678 26.2593 41.9678 23.7435C41.9678 21.1926 42.5394 18.834 43.6827 16.6676C44.826 14.5012 46.489 12.754 48.6717 11.4262C50.8544 10.0984 53.4874 9.43448 56.5709 9.43448C59.6544 9.43448 62.2874 10.0984 64.4701 11.4262C66.6528 12.754 68.3158 14.5012 69.4591 16.6676C70.6024 18.834 71.174 21.1926 71.174 23.7435C71.174 26.2593 70.6024 28.6005 69.4591 30.7669C68.3158 32.9333 66.6528 34.6805 64.4701 36.0083C62.2874 37.3361 59.6544 38 56.5709 38ZM50.4906 23.7435C50.4906 25.8749 51.0622 27.6046 52.2056 28.9324C53.3835 30.2602 54.8386 30.9241 56.5709 30.9241C58.2685 30.9241 59.689 30.2602 60.8323 28.9324C62.0103 27.6046 62.5992 25.8749 62.5992 23.7435C62.5992 21.612 62.0103 19.8823 60.8323 18.5545C59.689 17.2267 58.2685 16.5628 56.5709 16.5628C54.8386 16.5628 53.3835 17.2267 52.2056 18.5545C51.0622 19.8823 50.4906 21.612 50.4906 23.7435Z"
+                                fill="#C6CBCD" />
+                            <path
+                                d="M91.6159 37.7379C89.1907 37.7379 86.9041 37.2837 84.7561 36.3752C82.6427 35.4317 80.7545 34.1214 79.0915 32.4441C77.4632 30.732 76.1813 28.7228 75.2458 26.4166C74.3451 24.0754 73.8947 21.4722 73.8947 18.6069C73.8947 16.0212 74.3451 13.6101 75.2458 11.3738C76.1813 9.13747 77.4805 7.16322 79.1435 5.45104C80.8411 3.73885 82.7986 2.41103 85.0159 1.46759C87.2679 0.489195 89.6931 0 92.2915 0C95.6868 0 98.6663 0.733795 101.23 2.20138C103.828 3.66897 105.769 5.64322 107.051 8.12414L100.71 12.9462C99.8789 11.3039 98.6663 10.011 97.0726 9.06759C95.4789 8.12414 93.7813 7.65241 91.9797 7.65241C90.1088 7.65241 88.4632 8.15908 87.0427 9.17241C85.6222 10.1508 84.5135 11.4961 83.7167 13.2083C82.9199 14.9205 82.5214 16.8248 82.5214 18.9214C82.5214 21.0529 82.9372 22.9747 83.7687 24.6869C84.6002 26.3641 85.7435 27.692 87.1986 28.6703C88.6883 29.6138 90.4033 30.0855 92.3435 30.0855C95.6694 30.0855 98.6663 28.548 101.334 25.4731V24.2676H94.1624V18.0303H108.402V37.4759H101.334V33.8069C98.5277 36.4276 95.2883 37.7379 91.6159 37.7379Z"
+                                fill="#C6CBCD" />
+                            <path
+                                d="M126.353 38C123.235 38 120.584 37.3361 118.402 36.0083C116.254 34.6805 114.608 32.9333 113.465 30.7669C112.321 28.6005 111.75 26.2593 111.75 23.7435C111.75 21.1926 112.321 18.834 113.465 16.6676C114.608 14.5012 116.271 12.754 118.454 11.4262C120.636 10.0984 123.269 9.43448 126.353 9.43448C129.436 9.43448 132.069 10.0984 134.252 11.4262C136.435 12.754 138.098 14.5012 139.241 16.6676C140.384 18.834 140.956 21.1926 140.956 23.7435C140.956 26.2593 140.384 28.6005 139.241 30.7669C138.098 32.9333 136.435 34.6805 134.252 36.0083C132.069 37.3361 129.436 38 126.353 38ZM120.272 23.7435C120.272 25.8749 120.844 27.6046 121.987 28.9324C123.165 30.2602 124.62 30.9241 126.353 30.9241C128.05 30.9241 129.471 30.2602 130.614 28.9324C131.792 27.6046 132.381 25.8749 132.381 23.7435C132.381 21.612 131.792 19.8823 130.614 18.5545C129.471 17.2267 128.05 16.5628 126.353 16.5628C124.62 16.5628 123.165 17.2267 121.987 18.5545C120.844 19.8823 120.272 21.612 120.272 23.7435Z"
+                                fill="#C6CBCD" />
                         </svg>
                     </div>
-                    <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</div>
+                    <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis
+                        proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est
+                        leo cursus.</div>
                     <div class="socials">
                         <div class="socials__info"><span>15k</span> followers</div>
                         <div class="socials__icons">
                             <ul class="socials__icons-list">
                                 <li>Follow Us</li>
-                                <li><a href="#" target="_blank"><i class="socials__icons-item fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="socials__icons-item fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="socials__icons-item fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="socials__icons-item fa-brands fa-pinterest-p"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="socials__icons-item fa-brands fa-linkedin-in"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="socials__icons-item fa-brands fa-youtube"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="socials__icons-item fa-brands fa-dribbble"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="socials__icons-item fa-brands fa-tiktok"></i></a></li>
+                                <li><a href="#" target="_blank"><i
+                                            class="socials__icons-item fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#" target="_blank"><i
+                                            class="socials__icons-item fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#" target="_blank"><i
+                                            class="socials__icons-item fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#" target="_blank"><i
+                                            class="socials__icons-item fa-brands fa-pinterest-p"></i></a></li>
+                                <li><a href="#" target="_blank"><i
+                                            class="socials__icons-item fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#" target="_blank"><i
+                                            class="socials__icons-item fa-brands fa-youtube"></i></a></li>
+                                <li><a href="#" target="_blank"><i
+                                            class="socials__icons-item fa-brands fa-dribbble"></i></a></li>
+                                <li><a href="#" target="_blank"><i
+                                            class="socials__icons-item fa-brands fa-tiktok"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <form class="footer__form" action="/" method="post">
+                    <form class="footer__form" action="/">
                         <input class="footer__form-input" type="email" name="email" placeholder="Your Email">
                         <button class="footer__form-btn">Subscribe</button>
                     </form>
@@ -512,7 +649,8 @@
                             <a class="blogs__item-link" href="#">
                                 <img class="blogs__item-img" src="img/footer/footer-blogs-1.jpg" alt="">
                                 <div class="blogs__item-desc">
-                                    <h6 class="blogs__item-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                                    <h6 class="blogs__item-title">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.</h6>
                                     <div class="blogs__item-date">jan.9.22.15</div>
                                 </div>
                             </a>
@@ -521,7 +659,8 @@
                             <a class="blogs__item-link" href="#">
                                 <img class="blogs__item-img" src="img/footer/footer-blogs-2.jpg" alt="">
                                 <div class="blogs__item-desc">
-                                    <h6 class="blogs__item-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                                    <h6 class="blogs__item-title">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.</h6>
                                     <div class="blogs__item-date">jan.9.22.15</div>
                                 </div>
                             </a>
@@ -530,7 +669,8 @@
                             <a class="blogs__item-link" href="#">
                                 <img class="blogs__item-img" src="img/footer/footer-blogs-3.jpg" alt="">
                                 <div class="blogs__item-desc">
-                                    <h6 class="blogs__item-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                                    <h6 class="blogs__item-title">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.</h6>
                                     <div class="blogs__item-date">jan.9.22.15</div>
                                 </div>
                             </a>
@@ -540,15 +680,24 @@
                 <div class="footer__instagram">
                     <div class="footer__title">Instagram</div>
                     <ul class="instagram-photos">
-                        <li class="instagram-photos__item"><a href="#" target="_blank"><img src="img/footer/footer-instargam-1.jpg" alt=""></a></li>
-                        <li class="instagram-photos__item"><a href="#" target="_blank"><img src="img/footer/footer-instargam-2.jpg" alt=""></a></li>
-                        <li class="instagram-photos__item"><a href="#" target="_blank"><img src="img/footer/footer-instargam-3.jpg" alt=""></a></li>
-                        <li class="instagram-photos__item"><a href="#" target="_blank"><img src="img/footer/footer-instargam-4.jpg" alt=""></a></li>
-                        <li class="instagram-photos__item"><a href="#" target="_blank"><img src="img/footer/footer-instargam-5.jpg" alt=""></a></li>
-                        <li class="instagram-photos__item"><a href="#" target="_blank"><img src="img/footer/footer-instargam-6.jpg" alt=""></a></li>
-                        <li class="instagram-photos__item"><a href="#" target="_blank"><img src="img/footer/footer-instargam-7.jpg" alt=""></a></li>
-                        <li class="instagram-photos__item"><a href="#" target="_blank"><img src="img/footer/footer-instargam-8.jpg" alt=""></a></li>
-                        <li class="instagram-photos__item"><a href="#" target="_blank"><img src="img/footer/footer-instargam-9.jpg" alt=""></a></li>
+                        <li class="instagram-photos__item"><a href="#" target="_blank"><img
+                                    src="img/footer/footer-instargam-1.jpg" alt=""></a></li>
+                        <li class="instagram-photos__item"><a href="#" target="_blank"><img
+                                    src="img/footer/footer-instargam-2.jpg" alt=""></a></li>
+                        <li class="instagram-photos__item"><a href="#" target="_blank"><img
+                                    src="img/footer/footer-instargam-3.jpg" alt=""></a></li>
+                        <li class="instagram-photos__item"><a href="#" target="_blank"><img
+                                    src="img/footer/footer-instargam-4.jpg" alt=""></a></li>
+                        <li class="instagram-photos__item"><a href="#" target="_blank"><img
+                                    src="img/footer/footer-instargam-5.jpg" alt=""></a></li>
+                        <li class="instagram-photos__item"><a href="#" target="_blank"><img
+                                    src="img/footer/footer-instargam-6.jpg" alt=""></a></li>
+                        <li class="instagram-photos__item"><a href="#" target="_blank"><img
+                                    src="img/footer/footer-instargam-7.jpg" alt=""></a></li>
+                        <li class="instagram-photos__item"><a href="#" target="_blank"><img
+                                    src="img/footer/footer-instargam-8.jpg" alt=""></a></li>
+                        <li class="instagram-photos__item"><a href="#" target="_blank"><img
+                                    src="img/footer/footer-instargam-9.jpg" alt=""></a></li>
                     </ul>
                     <a href="" class="instagram-photos__link">See all photos</a>
                 </div>
@@ -558,6 +707,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
