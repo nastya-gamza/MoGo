@@ -898,9 +898,14 @@ h1 {
 }
 .devices__phone {
   position: absolute;
-  right: -7%;
-  top: 33%;
+  right: -6%;
+  top: 21%;
   width: 30%;
+}
+@media (max-width: 1024px) {
+  .devices__phone {
+    top: 30%;
+  }
 }
 
 .what-we-do {

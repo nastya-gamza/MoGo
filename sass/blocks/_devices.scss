@@ -47,8 +47,12 @@
 
     &__phone {
         position: absolute;
-        right: -7%;
-        top: 33%;
+        right: -6%;
+        top: 21%;
         width: 30%;
+
+        @include _1024 {
+            top: 30%;
+        }
     }
 }
