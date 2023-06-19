@@ -1,33 +1,72 @@
 .footer {
     padding-top: 75px;
 
+    @include _1024 {
+        padding-top: 55px;
+    }
+
     &__top {
         display: grid;
-        grid-template-columns: 1fr 1fr 270px;
+        grid-template-columns: 1fr 1fr minmax(270px, auto);
         gap: 30px;
         margin-bottom: 40px;
+
+        @include _1024 {
+            gap: 20px;
+        }
+
+        @include _980 {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        @include _768 {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
     }
 
     &__media {
         color: $lightgray;
+
+        @include _980 {
+            grid-column: 1/-1;
+        }
+
+        @include _980 {
+            text-align: center;
+        }
     }
 
     &__logo {
         margin-bottom: 50px;
+
+        @include _980 {
+            margin-bottom: 30px;
+            svg {
+                width: 95px;
+            }
+        }
     }
 
     &__text {
         margin-bottom: 60px;
+
+        @include _980 {
+            margin-bottom: 35px;
+        }
     }
 
     &__form {
         display: flex;
-        justify-content: space-between;
         max-width: 100%;
-        
+
+        @include _980 {
+            justify-content: center;
+        }
+
         &-input {
             padding: 20px 7px;
-            width: 100%;
             border: 1px solid $lightgray;
             border-right: none;
             color: $dark;
@@ -41,6 +80,14 @@
                 box-shadow: 0 0 20px 1px $main;
                 box-shadow: $main 0px 15px 40px -12px;
             }
+
+            @include _1024 {
+                padding: 15px 7px;
+            }
+
+            @include _430 {
+                width: 100%;
+            }
         }
 
         &-btn {
@@ -51,13 +98,15 @@
             text-transform: uppercase;
             padding: 0 17px;
             transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+
             &:hover {
-                background-color: #87D2C4;
-                border: 1px solid #87D2C4;
+                background-color: #87d2c4;
+                border: 1px solid #87d2c4;
             }
+
             &:active {
-                background-color: #5C958A;
-                border: 1px solid #5C958A;
+                background-color: #5c958a;
+                border: 1px solid #5c958a;
             }
         }
     }
@@ -66,14 +115,38 @@
         font-size: 24px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
+
+        @include _1024 {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        @include _550 {
+            text-align: center;
+        }
     }
 
     &__bottom {
         border-top: 1px solid $lightgray;
     }
 
-    &__copy{
+    &__instagram {
+        @include _980 {
+            justify-self: center;
+        }
+
+        @include _768 {
+            justify-self: start;
+        }
+
+        @include _550 {
+            text-align: center;
+            justify-self: center;
+        }
+    }
+
+    &__copy {
         padding: 20px 0;
         text-align: center;
         font-size: 13px;
@@ -83,8 +156,11 @@
 }
 
 .socials {
-
     margin-bottom: 45px;
+
+    @include _768 {
+        text-align: center;
+    }
 
     &__info {
         border-bottom: 1px solid $lightgray;
@@ -93,30 +169,69 @@
         font-style: italic;
         color: $dark;
         text-transform: uppercase;
-        
+
         span {
             font-size: 36px;
             font-weight: 700;
             font-style: normal;
             text-transform: lowercase;
+
+            @include _550 {
+                font-size: 24px;
+            }
+        }
+
+        @include _980 {
+            padding-bottom: 15px;
         }
     }
 
-    &__icons-list{
+    &__icons-list {
         display: flex;
-        
-        
+        align-items: center;
+        flex-wrap: wrap;
+
+        @include _980 {
+            justify-content: center;
+            font-size: 28px;
+            text-align: center;
+            gap: 15px;
+        }
+
+        @include _550 {
+            justify-content: center;
+            font-size: 24px;
+            text-align: center;
+            gap: 10px;
+        }
+
+        @include _380 {
+            font-size: 20px;
+            gap: 5px;
+        }
+
         li:first-child {
             font-size: 13px;
             font-style: italic;
             margin-right: 50px;
+
+            @include _980 {
+                font-size: 18px;
+                margin-right: 25px;
+            }
+
+            @include _550 {
+                width: 100%;
+                margin-bottom: 10px;
+            }
         }
     }
+
     &__icons-item {
         color: $main;
         transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
         margin-right: 12px;
-        
+
         &:hover {
             color: $accent;
             transform: scale(1.2);
@@ -124,10 +239,63 @@
     }
 }
 
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__item {
+        &:hover {
+            .blogs__item-img {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__item-img {
+        opacity: 0.7;
+        transition: opacity 0.3s ease-in-out;
+
+        @include _430 {
+            opacity: 1;
+        }
+    }
+
+    &__item-link {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+
+        @include _1024 {
+            gap: 20px;
+        }
+    }
+
+    &__item-title {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+
+        @include _430 {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__item-date {
+        font-size: 13px;
+    }
+}
+
 .instagram-photos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 40px;
+    
+    @include _1024 {
+        margin-bottom: 30px;
+    }
 
     &__item {
         transition: transform 0.3s ease-in-out;
@@ -156,7 +324,7 @@
             background-color: $dark;
             transition: width 0.3s ease-in-out;
         }
-        
+
         &:hover {
             &::after {
                 width: 100%;
@@ -164,38 +332,3 @@
         }
     }
 }
-
-.blogs {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    &__item {
-        &:hover {
-            .blogs__item-img {
-                opacity: 1;
-            }
-        }
-    }
-
-    &__item-img {
-        opacity: 0.7;
-        transition: opacity 0.3s ease-in-out;
-    }
-
-    &__item-link {
-        display: flex;
-        gap: 30px;
-    }
-
-    &__item-title {
-        font-weight: 700;
-        margin-bottom: 20px;
-        text-transform: uppercase;
-    }
-
-    &__item-date {
-        font-size: 13px;
-    }
-}
-

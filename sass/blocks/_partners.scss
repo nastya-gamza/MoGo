@@ -7,6 +7,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 80px;
+            @include _768 {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px 50px;
+            }
 		}
 
 		&__item {
@@ -16,6 +22,14 @@
             background-position: center;
             background-size: 60%;
             transition: transform 0.5s ease-in-out;
+            @include _1024 {
+                width: 90px;
+                height: 90px;
+            }
+            @include _550 {
+                width: 70px;
+                height: 70px;
+            }
 
             &:hover {
                 cursor: pointer;

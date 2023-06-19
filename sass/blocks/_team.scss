@@ -1,14 +1,30 @@
 .team {
-
     &__top {
         margin-bottom: 100px;
+
+        @include _1024 {
+            margin-bottom: 80px;
+        }
+
+        @include _768 {
+            margin-bottom: 50px;
+        }
     }
 
     &__gallery {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         text-align: center;
+
+        @include _1024 {
+            gap: 20px;
+        }
+
+        @include _768 {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
     }
 
     &__item {
@@ -17,9 +33,16 @@
 
     &__img {
         position: relative;
-        margin-bottom: 40px;
-        display: block;
-        
+        margin-bottom: 35px;
+        display: inline-block;
+
+        @include _1024 {
+            margin-bottom: 25px;
+        }
+
+        @include _768 {
+            margin-bottom: 10px;
+        }
 
         &::after {
             content: "";
@@ -33,17 +56,26 @@
             top: 0;
             right: 0;
             bottom: 0;
-            background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+            background-image: linear-gradient(
+                360deg,
+                rgba(237, 215, 137, 0.9) 0%,
+                rgba(233, 130, 131, 0.9) 100%
+            );
             opacity: 0;
             transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            @include _768 {
+                display: none;
+            }
         }
 
         &:hover {
             cursor: pointer;
+
             &::after {
                 opacity: 1;
-                transform: translate(-5%, -5%);
+                transform: translate(-3%, -3%);
             }
+
             .team__social-list {
                 opacity: 1;
             }
@@ -62,6 +94,15 @@
         opacity: 0;
         transform: translate(-50%, -50%);
         transition: opacity 0.3s ease-in-out;
+
+        @include _768 {
+            opacity: 1;
+            right: 0;
+            bottom: 0;
+            transform: translate(0, 0);
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
     }
 
     &__social-item {
@@ -70,21 +111,36 @@
         justify-content: center;
         width: 42px;
         height: 42px;
-        background-color: #F9EFCF;
+        background-color: #f9efcf;
         color: $accent;
         cursor: pointer;
         font-size: 32px;
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
         &:hover {
             background-color: $accent;
-            color: #F9EFCF;
+            color: #f9efcf;
+        }
+
+        @include _430 {
+            width: 32px;
+            height: 32px;
+            font-size: 24px;
         }
     }
 
     &__name {
         font-weight: 700;
         font-size: 24px;
-        margin-bottom: 40px;
-    }
+        margin-bottom: 30px;
 
+        @include _1024 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        @include _768 {
+            margin-bottom: 10px;
+        }
+    }
 }

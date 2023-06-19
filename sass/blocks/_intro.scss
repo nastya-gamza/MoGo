@@ -1,22 +1,66 @@
 .intro {
-    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(../img/main/bg-intro.jpg);
     padding-top: 185px;
+    background: linear-gradient(
+            360deg,
+            rgba(237, 215, 137, 0.9) 0%,
+            rgba(233, 130, 131, 0.9) 100%
+        ),
+        url(../img/main/bg-intro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: $white;
+
+    @include _1024 {
+        padding-top: 120px;
+    }
+
+    @include _380 {
+        padding-top: 95px;
+    }
 
     &__content {
         max-width: 830px;
         margin: 0 auto;
         margin-bottom: 100px;
         text-align: center;
+
+        @include _1024 {
+            max-width: 535px;
+            margin-bottom: 80px;
+        }
+
+        @include _768 {
+            max-width: 430px;
+        }
+
+        @include _550 {
+            max-width: 290px;
+        }
+
+        @include _380 {
+            max-width: 270px;
+            margin-bottom: 50px;
+        }
     }
 
     &__subtitle {
         font-family: $font-accent;
         font-size: 64px;
         margin-bottom: 25px;
+
+        @include _1024 {
+            font-size: 48px;
+        }
+        @include _768 {
+            font-size: 36px;
+        }
+        @include _768 {
+            font-size: 28px;
+        }
+        @include _380 {
+            margin-bottom: 50px;
+        }
     }
 
     &__title {
@@ -27,6 +71,23 @@
         text-transform: uppercase;
         text-align: right;
 
+        @include _1024 {
+            font-size: 96px;
+            margin-bottom: 50px;
+        }
+
+        @include _768 {
+            font-size: 76px;
+        }
+
+        @include _550 {
+            font-size: 52px;
+        }
+
+        @include _380 {
+            font-size: 48px;
+        }
+
         &:after {
             content: "";
             display: block;
@@ -35,7 +96,15 @@
             height: 4px;
             background-color: $white;
             margin: 45px auto 0;
-          }
+
+            @include _1024 {
+                width: 115px;
+            }
+
+            @include _380 {
+                width: 134px;
+            }
+        }
     }
 
     &__link {
@@ -46,14 +115,26 @@
         font-size: 24px;
         text-transform: uppercase;
         transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+        @include _1024 {
+            padding: 14px 95px;
+            font-size: 18px;
+        }
+        
+        @include _768 {
+            padding: 12px 70px;
+            font-size: 18px;
+        }
+
         &:hover {
             background-color: $white;
-            color: #E4BE8D;
+            color: #e4be8d;
         }
+
         &:active {
-            border: 4px solid #E4BE8D;
+            border: 4px solid #e4be8d;
             background-color: $white;
-            color: #E4BE8D;
+            color: #e4be8d;
         }
     }
 
@@ -61,6 +142,9 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
+        @include _1024 {
+            gap: 20px;
+        }
     }
 
     &__slide {
@@ -86,11 +170,26 @@
             width: 25%;
             height: 4px;
             background-color: $accent;
+            @include _650 {
+                width: 100%;
+            }
         }
     }
 
-    &__slide-number {
-        font-weight: 700;
-        font-size: 36px;
+    &__slide-info {
+        span {
+            font-weight: 700;
+            font-size: 36px;
+            @include _1024 {
+                font-size: 24px;
+            }
+            @include _768 {
+                font-size: 18px;
+            }
+        }
+
+        @include _650 {
+            display: none;
+        }
     }
 }

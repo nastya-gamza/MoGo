@@ -1,64 +1,75 @@
 .reviews {
-
+    position: relative;
     padding: 115px 0;
-    
+
+    @include _1024 {
+        padding: 85px 0;
+    }
+
+    @include _768 {
+        padding: 60px 0;
+    }
+
+    @include _430 {
+        padding: 40px 0;
+    }
+
     &--bg {
         padding: 45px 0;
         background-color: #F8F8F8;
+
+        @include _768 {
+            padding: 30px 0;
+        }
     }
-    
+
     &__container {
-        position: relative;
-        max-width: 1000px;
-        margin: 0 auto;
         display: flex;
         align-items: center;
         column-gap: 30px;
 
-        &::before,
-        &::after {
-            content: "";
-            position: absolute;
-            display: block;
-            clear: both;
-            width: 22px;
-            height: 22px;
-            border-bottom: 2px solid $lightgray;
-            border-left: 2px solid $lightgray;
-            transition: all 0.3s ease-in-out;
-            top: 50%;
-            cursor: pointer;
-        }
-
-        &::before {
-            left: -80px;
-            transform: translateY(-50%) rotate(45deg);
-        }
-        
-        &::after {
-            right: -80px;
-            transform: translateY(-50%) rotate(-135deg);
+        @include _768 {
+            flex-direction: column;
+            gap: 30px;
         }
     }
 
     &__icon {
-        padding: 33px;
+        padding: 40px;
         border: 2px solid $main;
+
+        @include _1024 {
+            padding: 30px;
+        }
+
+        @include _768 {
+            display: none;;
+        }
 
         &::after {
             content: "";
             display: block;
-            height: 90px;
-            width: 90px;
+            height: 75px;
+            width: 75px;
             background-image: url('../img/icons/reveiw-icon.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+
+            @include _1024 {
+                height: 50px;
+                width: 50px;
+            }
         }
     }
 
     &__photo {
         border-radius: 50%;
+
+        @include _1024 {
+            height: 115px;
+            width: 115px;
+        }
     }
 
     &__text {
@@ -67,6 +78,14 @@
         font-style: italic;
         color: $lightgray;
         margin-bottom: 25px;
+
+        @include _1024 {
+            font-size: 18px;
+        }
+
+        @include _430 {
+            font-size: 14px;
+        }
     }
 
     &__auther {
@@ -74,6 +93,15 @@
         font-family: $font-accent;
         font-size: 30px;
         padding-left: 125px;
+
+        @include _1024 {
+            font-size: 24px;
+            padding-left: 85px;
+        }
+
+        @include _430 {
+            font-size: 18px;
+        }
 
         &::before {
             content: "";
@@ -85,6 +113,10 @@
             height: 4px;
             clear: both;
             background-color: $accent;
+            
+            @include _1024 {
+                width: 47px;
+            }
         }
     }
 }

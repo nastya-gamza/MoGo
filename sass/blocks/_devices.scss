@@ -1,33 +1,48 @@
-.devices { 
+.devices {
+    padding-bottom: 0;
     position: relative;
-    height: 868px;
     background-image: url('../img/devices/devices-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
 
-    
     &::before {
-        position: absolute;
         content: "";
-        clear: both;
+        position: absolute;
         left: 0;
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(255, 255, 255, 0.8);
         z-index: -1;
+        clear: both;
+        background-color: rgba(255, 255, 255, 0.8);
     }
-    
+
     &__top {
         margin-bottom: 110px;
+
+        @include _700 {
+            margin-bottom: 90px;
+        }
     }
 
     &__container {
         position: relative;
         max-width: 685px;
         margin: 0 auto;
+
+        @include _1024 {
+            max-width: 460px;
+        }
+
+        @include _650 {
+            max-width: 350px;
+        }
+
+        @include _430 {
+            max-width: 280px;
+        }
     }
 
     &__phone {

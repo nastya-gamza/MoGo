@@ -1,33 +1,39 @@
-.none {
-  display: none;
+html,
+body {
+    height: 100%;
+    font-family: $font-main;
+    font-size: 18px;
+    color: $dark;
+    line-height: 1.167;
+    
+    @include _1024 {
+        font-size: 14px;
+    }
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-html,
 body {
-  height: 100%;
-  font-family: $font-main;
-  font-size: 18px;
-  color: $dark;
-  line-height: 1.167;
+    &.lock {
+        overflow: hidden;
+    }
 }
 
 h1 {
-  font-family: $font-header;
-  font-weight: 700;
-  font-size: 144px;
-  color: $white;
-  line-height: 1.22;
-  text-transform: uppercase;
+    font-family: $font-header;
+    font-weight: 700;
+    font-size: 144px;
+    color: $white;
+    line-height: 1.22;
+    text-transform: uppercase;
 }
 
 .wrapper {
-  margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
 }
 
 .about,
@@ -38,7 +44,11 @@ h1 {
 .work,
 .clients,
 .stories {
-  padding: 70px 0 105px;
+    padding: 70px 0 105px;
+
+    @include _1024 {
+        padding: 50px 0 75px;
+    }
 }
 
 .section-title {
@@ -48,36 +58,65 @@ h1 {
 }
 
 .section-top {
+    text-align: center;
 
-  text-align: center;
+    &__subtitle {
+        font-family: $font-accent;
+        font-size: 30px;
+        margin-bottom: 50px;
 
-  &__subtitle {
-    font-family: $font-accent;
-    font-size: 30px;
-    margin-bottom: 50px;
-  }
+        @include _1024 {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
 
-  &__title {
-    position: relative;
-    font-size: 36px;
-    font-weight: 900;
-    text-transform: uppercase;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 50%;
-      bottom: -45px;
-      transform: translateX(-50%);
-      display: block;
-      width: 170px;
-      height: 4px;
-      clear: both;
-      background-color: #F38281;
+        @include _768 {
+            margin-bottom: 25px;
+        }
     }
-  }
 
-  &__text {
-    margin-top: 90px;
-  }
+    &__title {
+        position: relative;
+        font-size: 36px;
+        font-weight: 900;
+        text-transform: uppercase;
+
+        @include _1024 {
+            font-size: 24px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -45px;
+            transform: translateX(-50%);
+            display: block;
+            width: 170px;
+            height: 4px;
+            clear: both;
+            background-color: #f38281;
+
+            @include _1024 {
+                width: 148px;
+            }
+
+            @include _380 {
+                width: 135px;
+                bottom: -35px;
+            }
+        }
+    }
+
+    &__text {
+        margin-top: 90px;
+
+        @include _1024 {
+            margin-top: 80px;
+        }
+
+        @include _380 {
+            margin-top: 60px;
+        }
+    }
 }

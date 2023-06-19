@@ -1,11 +1,14 @@
 .futures {
-    
     background-color: $main;
 
     &__row {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(144px, 1fr));
+        display: flex;
+        align-items: center;
         justify-content: center;
+
+        @include _920 {
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
@@ -13,18 +16,55 @@
         flex-direction: column;
         align-items: center;
         border-right: 1px solid $white;
+        font-size: 24px;
         color: $white;
-        padding: 80px 0 60px;
+        text-align: center;
+        width: 234px;
+        padding: 60px 0;
+
+        @include _1024 {
+            width: 200px;
+            padding: 50px 0 40px;
+        }
+
+        @include _920 {
+            width: 185px;
+            padding: 30px 0 20px;
+            border-right: none;
+            border-bottom: 1px solid $white;
+        }
+
+        @include _768 {
+            width: 170px;
+            padding: 20px 0 15px;
+            font-size: 18px;
+        }
+
+        @include _430 {
+            width: 144px;
+            padding: 15px 0 10px;
+            font-size: 18px;
+        }
 
         &:first-child {
             border-left: 1px solid $white;
+            @include _920 {
+                border-left: none;
+            }
         }
     }
-
 
     &__item-number {
         font-weight: 700;
         font-size: 64px;
         margin-bottom: 15px;
+
+        @include _1024 {
+            font-size: 48px;
+        }
+        
+        @include _430 {
+            font-size: 36px;
+        }
     }
 }

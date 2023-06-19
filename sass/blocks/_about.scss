@@ -1,13 +1,29 @@
 .about {
-
     &__top {
         margin-bottom: 90px;
+
+        @include _1024 {
+            margin-bottom: 70px;
+        }
+        @include _768 {
+            margin-bottom: 50px;
+        }
+        @include _380 {
+            margin-bottom: 30px;
+        }
     }
 
     &__row {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+        @include _1024 {
+            gap: 20px;
+        }
+        @include _700 {
+            grid-template-columns: minmax(200px, 370px);
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -19,12 +35,8 @@
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
 
-        img {
-            display: block;
-        }
-
         &:hover {
-            transform: translate(-5%, -5%);
+            transform: translate(-4%, -4%);
 
             &::before,
             &::after {
@@ -44,7 +56,7 @@
                 content: "Super team";
                 top: 25%;
                 z-index: 5;
-                background-image: url('../img/icons/about-icon.svg');
+                background-image: url("../img/icons/about-icon.svg");
                 background-size: 12%;
                 background-repeat: no-repeat;
                 background-position: 50% 20%;
@@ -52,12 +64,18 @@
                 font-weight: 500;
                 color: $white;
                 text-transform: uppercase;
+
+                @include _1024 {
+                    font-size: 18px;
+                }
             }
             &::after {
-                background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+                background: linear-gradient(
+                    360deg,
+                    rgba(237, 215, 137, 0.9) 0%,
+                    rgba(233, 130, 131, 0.9) 100%
+                );
             }
         }
     }
 }
-
-

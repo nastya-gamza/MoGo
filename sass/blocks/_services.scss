@@ -1,18 +1,40 @@
 .services {
+    overflow-y: hidden;
 
     &__top {
         margin-bottom: 125px;
+
+        @include _700 {
+            margin-bottom: 110px;
+        }
     }
-    
+
     &__container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
         gap: 100px 30px;
+        justify-items: center;
+
+        @include _1024 {
+            gap: 70px 30px;
+        }
+
+        @include _920 {
+            gap: 50px 30px;
+        }
+
+        @include _700 {
+            gap: 35px 20px;
+        }
     }
 
     &__item {
         display: flex;
         column-gap: 30px;
+
+        @include _586 {
+            column-gap: 20px;
+        }
     }
 
     &__item-img {
@@ -21,34 +43,50 @@
         background-position: center top;
         background-repeat: no-repeat;
         background-size: contain;
+        padding-left: 50px;
+
+        @include _1024 {
+            width: 50px;
+            height: 50px;
+        }
+
+        @include _586 {
+            width: 42px;
+            height: 42px;
+            padding-left: 75px;
+        }
 
         &--photography {
-            background-image: url('../img/services/services-01.svg');
+            background-image: url("../img/services/services-01.svg");
         }
 
         &--design {
-            background-image: url('../img/services/services-02.svg');
+            background-image: url("../img/services/services-02.svg");
         }
 
         &--creativity {
-            background-image: url('../img/services/services-03.svg');
+            background-image: url("../img/services/services-03.svg");
         }
 
         &--seo {
-            background-image: url('../img/services/services-04.svg');
+            background-image: url("../img/services/services-04.svg");
         }
 
         &--css {
-            background-image: url('../img/services/services-05.svg');
+            background-image: url("../img/services/services-05.svg");
         }
 
         &--digital {
-            background-image: url('../img/services/services-06.svg');
+            background-image: url("../img/services/services-06.svg");
         }
     }
 
     &__item-desc {
         padding-top: 18px;
+
+        @include _380 {
+            padding-top: 10px;
+        }
     }
 
     &__item-title {
@@ -56,6 +94,14 @@
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 40px;
-    }
 
+        @include _1024 {
+            margin-bottom: 25px;
+        }
+
+        @include _700 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
 }

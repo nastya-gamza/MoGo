@@ -1,6 +1,4 @@
 .map {
-
-    height: 231px;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/map/map-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +13,11 @@
         font-weight: 900;
         text-transform: uppercase;
         color: $accent;
-        padding-top: 40px;
+        padding: 40px 0;
+        @include _1024 {
+            font-size: 24px;
+            padding: 30px 0;
+        }
 
         &::before {
             content: "";
@@ -36,13 +38,17 @@
             height: 4px;
             background-color: $accent;
             margin: 40px auto 0;
+            @include _1024 {
+                width: 134px;
+                margin: 30px auto 0;
+            }
         }
     }
 
     &__link {
         transition: text-shadow 0.3s ease-in-out;
         &:hover {
-            text-shadow: 2px 7px 5px rgb(245, 182, 180), 
+            text-shadow: 2px 7px 5px rgb(245, 182, 180),
             0px -4px 10px rgb(255, 255, 255);
         }
     }
