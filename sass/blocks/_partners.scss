@@ -1,6 +1,5 @@
 
 .partners {
-
     background-color: #F8F8F8;
 
 		&__row {
@@ -8,7 +7,7 @@
             justify-content: space-between;
             align-items: center;
             gap: 80px;
-            
+
             @include _768 {
                 flex-wrap: wrap;
                 justify-content: center;

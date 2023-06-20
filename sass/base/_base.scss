@@ -49,6 +49,9 @@ h1 {
     @include _1024 {
         padding: 50px 0 75px;
     }
+    @include _768 {
+        padding-bottom: 40px;
+    }
 }
 
 .section-title {
@@ -86,15 +89,12 @@ h1 {
         }
 
         &::after {
-            content: "";
-            position: absolute;
+            @include pseudo-element();
             left: 50%;
             bottom: -45px;
             transform: translateX(-50%);
-            display: block;
             width: 170px;
             height: 4px;
-            clear: both;
             background-color: #f38281;
 
             @include _1024 {
@@ -109,14 +109,14 @@ h1 {
     }
 
     &__text {
-        margin-top: 90px;
+        padding-top: 90px;
 
         @include _1024 {
-            margin-top: 80px;
+            padding-top: 80px;
         }
 
         @include _380 {
-            margin-top: 60px;
+            padding-top: 60px;
         }
     }
 }

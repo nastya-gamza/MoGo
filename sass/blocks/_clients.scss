@@ -1,33 +1,33 @@
 .clients {
-    position: relative;
-    z-index: 0;
-    @include background('../img/clients/clients-bg.jpg', $size: cover);
+    background: linear-gradient(
+            rgba(255, 255, 255, 0.9),
+            rgba(255, 255, 255, 0.9)
+        ),
+        url(../img/clients/clients-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    &::before {
-        @include pseudo-element();
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-        background-color: rgba(255, 255, 255, 0.9);
+    @include _768 {
+        padding-bottom: 40px;
     }
 
     &__top {
         margin-bottom: 100px;
 
-        @include _768 {
+        @include _430 {
             margin-bottom: 80px;
         }
     }
 
     &__container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 40px 50px;
 
         @include _768 {
-            grid-template-columns: 1fr;
+            grid-template-columns: minmax(300px, 600px);
+            justify-content: center;
             gap: 30px;
         }
     }
@@ -44,7 +44,7 @@
             gap: 25px;
         }
 
-        @include _430 {
+        @include _550 {
             flex-direction: column;
             align-items: center;
             text-align: center;
@@ -62,7 +62,7 @@
             height: 100px;
         }
 
-        @include _430 {
+        @include _550 {
             height: auto;
         }
     }
@@ -72,7 +72,7 @@
         font-weight: 700;
         text-transform: uppercase;
         margin-bottom: 20px;
-        
+
         @include _1024 {
             font-size: 18px;
             margin-bottom: 12px;
@@ -99,7 +99,7 @@
             height: 4px;
             background-color: $accent;
 
-            @include _430 {
+            @include _550 {
                 width: 134px;
                 left: 50%;
                 transform: translateX(-50%);
