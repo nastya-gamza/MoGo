@@ -48,6 +48,7 @@
 
         &:first-child {
             border-left: 1px solid $white;
+            
             @include _920 {
                 border-left: none;
             }

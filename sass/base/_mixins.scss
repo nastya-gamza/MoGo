@@ -1,11 +1,11 @@
-@mixin pseudo-element($content: '', $display: block, $pos: absolute) {
+@mixin pseudo-element($content: '', $display: block, $pos: absolute, $clear: both) {
     content: $content;
     display: $display;
     position: $pos;
-    clear: both;
+    clear: $clear;
 }
 
-@mixin background ($imgpath, $pos: center, $repeat: no-repeat, $size) {
+@mixin background ($imgpath, $pos: center, $repeat: no-repeat, $size: contain) {
     background: {
         image: url($imgpath);
         position: $pos;

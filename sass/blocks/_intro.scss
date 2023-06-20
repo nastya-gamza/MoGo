@@ -52,12 +52,15 @@
         @include _1024 {
             font-size: 48px;
         }
+        
         @include _768 {
             font-size: 36px;
         }
+
         @include _768 {
             font-size: 28px;
         }
+
         @include _380 {
             margin-bottom: 50px;
         }
@@ -68,8 +71,8 @@
         font-size: 144px;
         font-weight: 700;
         margin-bottom: 70px;
-        text-transform: uppercase;
         text-align: right;
+        text-transform: uppercase;
 
         @include _1024 {
             font-size: 96px;
@@ -89,9 +92,7 @@
         }
 
         &:after {
-            content: "";
-            display: block;
-            clear: both;
+            @include pseudo-element($pos: relative);
             width: 170px;
             height: 4px;
             background-color: $white;
@@ -142,6 +143,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
+
         @include _1024 {
             gap: 20px;
         }
@@ -161,15 +163,13 @@
         color: $white;
 
         &::before {
-            content: "";
-            display: block;
-            clear: both;
-            position: absolute;
+            @include pseudo-element();
             top: -4px;
             left: 0;
             width: 25%;
             height: 4px;
             background-color: $accent;
+
             @include _650 {
                 width: 100%;
             }
@@ -180,9 +180,11 @@
         span {
             font-weight: 700;
             font-size: 36px;
+
             @include _1024 {
                 font-size: 24px;
             }
+
             @include _768 {
                 font-size: 18px;
             }

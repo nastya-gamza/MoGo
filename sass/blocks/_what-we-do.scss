@@ -3,9 +3,11 @@
 
     &__top {
         margin-bottom: 80px;
+
         @include _1024 {
             margin-bottom: 70px;
         }
+        
         @include _820 {
             margin-bottom: 40px;
         }
@@ -83,10 +85,7 @@
 
         &::before,
         &::after {
-            content: "";
-            position: absolute;
-            display: block;
-            clear: both;
+            @include pseudo-element();
             transition: transform 0.3s ease-in-out;
         }
 
@@ -99,6 +98,7 @@
             top: 50%;
             left: 18px;
             transform: translateY(-50%);
+            
             @include _430 {
                 width: 30px;
                 height: 30px;
@@ -113,6 +113,7 @@
             top: 40%;
             right: 8%;
             transform: rotate(135deg);
+
             @include _820 {
                 width: 17px;
                 height: 17px;

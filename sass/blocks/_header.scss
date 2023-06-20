@@ -40,7 +40,7 @@
 }
 
 .nav {
-    
+
     &__list {
         display: flex;
         align-items: center;
@@ -73,21 +73,22 @@
         &--cart {
             width: 50px;
             fill: $white;
+
             @include _1024 {
                 width: 45px;
             }
+
             &:hover {
                 fill: $hover;
             }
+
             @include _768 {
                 display: none;
             }
         }
 
         &::after {
-            content: "";
-            display: block;
-            position: absolute;
+            @include pseudo-element();
             bottom: -50%;
             left: 50%;
             transform: translate(-50%, 50%);
@@ -106,17 +107,17 @@
     }
 
     @include _768 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         position: fixed;
-        height: 100%;
-        width: 100%;
         top: -100%;
         left: 0;
         right: 0;
         bottom: 0;
         z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
         background: linear-gradient(360deg, rgba(237, 215, 137) 0%, rgba(233, 130, 131) 100%);
         background-size: cover;
         background-repeat: no-repeat;
@@ -143,8 +144,7 @@
 
     &::before,
     &::after {
-        content: "";
-        position: absolute;
+        @include pseudo-element();
         height: 3px;
         width: 100%;
         background-color: #fff;
@@ -181,8 +181,14 @@
     }
 
     @include _768 {
-        display: flex;
         position: relative;
         z-index: 9;
+        display: flex;
     }
+}
+
+@include _768 {
+    .nav--active {
+        top: 0;
+      }
 }

@@ -8,6 +8,7 @@
             justify-content: space-between;
             align-items: center;
             gap: 80px;
+            
             @include _768 {
                 flex-wrap: wrap;
                 justify-content: center;
@@ -18,14 +19,16 @@
 		&__item {
             width: 127px;
             height: 127px;
-            background-repeat: no-repeat;
             background-position: center;
+            background-repeat: no-repeat;
             background-size: 60%;
             transition: transform 0.5s ease-in-out;
+
             @include _1024 {
                 width: 90px;
                 height: 90px;
             }
+
             @include _550 {
                 width: 70px;
                 height: 70px;
@@ -37,25 +40,27 @@
             }
 		}
 }
+
 .partner-1 {
     background-image: url('../img/partners/partner-1.svg');
 }
+
 .partner-2 {
     background-image: url('../img/partners/partner-2.svg');
-
 }
+
 .partner-3 {
     background-image: url('../img/partners/partner-3.svg');
-
 }
+
 .partner-4 {
     background-image: url('../img/partners/partner-4.svg');
-
 }
+
 .partner-5 {
     background-image: url('../img/partners/partner-5.svg');
-
 }
+
 .partner-6 {
     background-image: url('../img/partners/partner-6.svg');
 }

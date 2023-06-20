@@ -43,6 +43,7 @@
 
         @include _980 {
             margin-bottom: 30px;
+
             svg {
                 width: 95px;
             }
@@ -72,9 +73,11 @@
             color: $dark;
             text-align: center;
             transition: border-color 0.3s ease-in-out;
+
             &:hover {
                 border-color: $main;
             }
+            
             &:focus {
                 border-color: $main;
                 box-shadow: 0 0 20px 1px $main;
@@ -313,15 +316,13 @@
         transition: text-decoration 0.3s ease-in-out;
 
         &::after {
-            content: "";
-            display: block;
-            position: absolute;
+            @include pseudo-element();
             bottom: -20%;
             left: 50%;
-            transform: translateX(-50%);
             width: 0;
             height: 1px;
             background-color: $dark;
+            transform: translateX(-50%);
             transition: width 0.3s ease-in-out;
         }
 
