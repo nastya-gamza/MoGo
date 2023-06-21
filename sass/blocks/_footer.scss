@@ -17,7 +17,7 @@
 
         @include _980 {
             grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+            gap: 35px;
         }
 
         @include _768 {
@@ -68,6 +68,7 @@
         }
 
         &-input {
+            appearance: none;
             padding: 20px 7px;
             border: 1px solid $lightgray;
             border-right: none;
@@ -75,11 +76,15 @@
             text-align: center;
             transition: border-color 0.3s ease-in-out;
 
+            &::placeholder {
+                color: $lightgray;
+            }
+
             &:hover {
                 border-color: $main;
             }
 
-            &:focus {
+            &:focus-visible {
                 border-color: $main;
                 box-shadow: 0 0 20px 1px $main;
                 box-shadow: $main 0px 15px 40px -12px;
@@ -89,7 +94,11 @@
                 padding: 15px 7px;
             }
 
-            @include _430 {
+            @include _980 {
+                padding: 15px 80px;
+            }
+
+            @include _550 {
                 width: 100%;
             }
         }
@@ -203,6 +212,11 @@
             justify-content: center;
             font-size: 28px;
             text-align: center;
+            gap: 20px;
+        }
+
+        @include _650 {
+            font-size: 25px;
             gap: 15px;
         }
 
