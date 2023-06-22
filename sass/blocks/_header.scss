@@ -174,10 +174,6 @@
             transform: rotate(-45deg);
             bottom: 14.5px;
         }
-
-        @include _768 {
-            text-outline: 0 0 #000;
-        }
     }
 
     @include _768 {
