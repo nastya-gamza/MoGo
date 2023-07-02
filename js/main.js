@@ -2,7 +2,10 @@ const headerBurger = document.querySelector(".header__burger");
 const nav = document.querySelector(".nav");
 const scrollUpBtn = document.querySelector(".scroll-up");
 const about = document.querySelector("#about");
-const tabs = Array.from(document.querySelectorAll('.tab'));
+const tabs = document.querySelectorAll('.tab');
+const introBg = document.querySelector('.intro');
+const introImg = document.querySelectorAll('.intro__img');
+const introSlide = document.querySelectorAll('.intro__slide');
 
 
 // BURGER
@@ -41,13 +44,11 @@ function tabToggle(e) {
 
 //INTRO
 
-const introBg = document.querySelector('.intro');
-const introSlide = document.querySelectorAll('.intro__slide');
-let counter = 1;
+let counter = 0;
 
 setInterval(() => {
-    if(counter === introSlide.length) {
-        counter = 1;
+    if(counter === introSlide.length - 1) {
+        counter = 0;
         switchSlide();
     } else {
         counter++;
@@ -56,11 +57,11 @@ setInterval(() => {
 }, 3000)
 
 function switchSlide() {
-    introBg.style.backgroundImage = `url(../img/main/bg-intro-${counter}.jpg)`;
-    introBg.classList.add('intro--active');
+    introImg.forEach(img => img.style.opacity = 0);
+    introImg[counter].style.opacity = 1;
 
     introSlide.forEach((slide, index) => {
-        if((index + 1) === counter) {
+        if(index === counter) {
             slide.classList.add('intro__slide--active');
         } else {
             slide.classList.remove('intro__slide--active');
