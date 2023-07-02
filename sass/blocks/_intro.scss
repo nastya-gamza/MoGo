@@ -1,15 +1,32 @@
 .intro {
+    position: relative;
     padding-top: 185px;
-    background: linear-gradient(
-            360deg,
-            rgba(237, 215, 137, 0.9) 0%,
-            rgba(233, 130, 131, 0.9) 100%
-        ),
-        url(../img/main/bg-intro.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: $white;
+    z-index: 0;
+
+    &--active {
+        opacity: 1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-image: linear-gradient(
+            360deg,
+            rgba(237, 215, 137, 0.9) 0%,
+            rgba(233, 130, 131, 0.9) 100%
+        );
+    }
+
+
 
     @include _1024 {
         padding-top: 120px;
@@ -52,7 +69,7 @@
         @include _1024 {
             font-size: 48px;
         }
-        
+
         @include _768 {
             font-size: 36px;
         }
@@ -121,7 +138,7 @@
             padding: 14px 95px;
             font-size: 18px;
         }
-        
+
         @include _768 {
             padding: 12px 70px;
             font-size: 18px;
