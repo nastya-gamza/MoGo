@@ -715,41 +715,74 @@ h1 {
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
-.about__img:hover {
-  transform: translate(-4%, -4%);
+@media (min-width: 701px) {
+  .about__img:hover {
+    transform: translate(-4%, -4%);
+  }
+  .about__img:hover::before, .about__img:hover::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    clear: both;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__img:hover::before {
+    content: "Super team";
+    top: 25%;
+    z-index: 5;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    background-image: url("../img/icons/about-icon.svg");
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: 12%;
+  }
 }
-.about__img:hover::before, .about__img:hover::after {
-  content: "";
-  display: flex;
-  position: absolute;
-  clear: both;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  align-items: center;
-  justify-content: center;
-}
-.about__img:hover::before {
-  content: "Super team";
-  top: 25%;
-  z-index: 5;
-  font-size: 24px;
-  font-weight: 500;
-  color: #fff;
-  text-transform: uppercase;
-  background-image: url("../img/icons/about-icon.svg");
-  background-position: 50% 20%;
-  background-repeat: no-repeat;
-  background-size: 12%;
-}
-@media (max-width: 1024px) {
+@media (min-width: 701px) and (max-width: 1024px) {
   .about__img:hover::before {
     font-size: 18px;
   }
 }
-.about__img:hover::after {
-  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+@media (min-width: 701px) {
+  .about__img:hover::after {
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  }
+}
+@media (max-width: 700px) {
+  .about__img::before, .about__img::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    clear: both;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    height: 83px;
+  }
+  .about__img::before {
+    content: "Super team";
+    z-index: 5;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    background-image: url("../img/icons/about-icon.svg");
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    background-size: 11%;
+  }
+  .about__img::after {
+    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+  }
 }
 
 .futures {
